@@ -1,0 +1,30 @@
+﻿@using MtcMvcCore.Core
+@using MtcMvcCore.Core.Models.Media
+@model CoreMediaFolder
+
+@{
+	ViewBag.Title = "Content Editor";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/admin/css/contentEditor.min.css" />
+@await Component.InvokeAsync("CoreHeader")
+
+<div class="d-flex w-100">
+	<div class="col-3 vh-100 overflow-auto bg-light border-end border-gray-light">
+		<div class="d-flex h-4 border-bottom bg-light align-items-end sticky-top">
+			<h3 class="ms-3 mb-1 fw-bold">Assets</h3>
+		</div>
+		<div class="">
+			@await Html.PartialAsync("AssetEditor/TreeView.cshtml")
+		</div>
+	</div>
+	<div class="col-9 bg-white vh-100 overflow-auto">
+		<div class="d-flex h-4 border-bottom border-gray-light bg-white align-items-end sticky-top">
+			<h3 class="ms-3 mb-1 fw-bold">Asset Editor</h3>
+		</div>
+		<div class="">
+			@await Html.PartialAsync("AssetEditor/Editor.cshtml")
+		</div>
+	</div>
+</div>

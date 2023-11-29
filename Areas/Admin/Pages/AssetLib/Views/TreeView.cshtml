@@ -1,0 +1,17 @@
+@model MtcMvcCore.Core.Models.Media.CoreMediaFolder
+
+<div class="treeview">
+
+    <div class="row action-bar">
+        <button class="btn">
+            <i id="WebTreeView" class="bi bi-globe"></i>
+        </button>
+        @* <i id="FileTreeView" class="bi bi-folder2-open"></i> *@
+    </div>
+    <div class="content">
+        <core-assettreeview data-api-subtreeitems="/api/core/assetlib/subitems">
+        	<core-assettree-item type='@Model.Type' title='@Model.Name' id='@Model.Id' data-has-subitems='@(Model.HasSubItems ? "true" : "false")'></core-assettree-item>
+		</core-assettreeview>
+    </div>
+
+</div>

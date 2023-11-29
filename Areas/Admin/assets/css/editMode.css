@@ -1,0 +1,22 @@
+﻿.editmode-navigation {
+	background-color: #ff6060;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+}
+
+.editmode-navigation-fixed {
+	position: fixed;
+	z-index: 100000;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
+.editmode-save {
+	cursor: pointer;
+}
+
+.core-change-mark {
+	border: 1px solid red;
+}

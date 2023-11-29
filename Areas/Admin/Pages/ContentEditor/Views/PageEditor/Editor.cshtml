@@ -1,0 +1,29 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Helper
+@using MtcMvcCore.Core
+@using MtcMvcCore.Core.Helper
+@using System.Text.Json;
+
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<page-editor data-url-load="/admin/contenteditor/page/getItemProperties" data-url-save="/admin/contenteditor/page/saveItemProperties" class="d-none">
+
+                <div class="d-flex align-items-center sticky-top editor-head top-4 border-bottom" style="min-height: 4rem">
+                        <div class="d-flex flex-column w-100">
+                                @await Html.PartialAsync("EditorActions.cshtml")
+                                <div class="container-inline">
+                        @await Html.PartialAsync("EditorMessages.cshtml")
+                                </div>
+
+                        </div>
+                </div>
+
+                <div class="mb-3 js-version h-hidden">
+                        @await Html.PartialAsync("Tabs.cshtml")
+                </div>
+
+                <div class="tab-content c-tab-content js-no-content h-hidden">
+                        No Version existing. <span class="js-create-version">Create a new one</span>
+                </div>
+
+</page-editor>
+

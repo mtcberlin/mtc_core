@@ -1,0 +1,65 @@
+﻿@model List<MtcMvcCore.Core.Models.Authentication.UserModel>
+<user-list class="test">
+	<div>
+		<button id="AddUser" type="button">Add</button>
+	</div>
+	<form method="post" enctype="multipart/form-data">
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th>User Name</th>
+					<th>Vorname</th>
+					<th>Nachname</th>
+					<th>Email</th>
+					<th>Rollen</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var user in Model)
+				{
+					<tr class="js-show-@user.UserName.GetHashCode()">
+						<td><div class="name-cycle"><i class="bi bi-person-circle"></i></div></td>
+						<td>@user.UserName</td>
+						<td>@user.FirstName</td>
+						<td>@user.LastName</td>
+						<td>@user.Email</td>
+						<td>@user.RolesText</td>
+						<td>
+							<a class="js-edit-user" href="#" data-user-name="@user.UserName.GetHashCode()"><i class="bi bi-pencil-fill mx-auto"></i></a>
+							| <a href="@Url.Action("RemoveUser", "UserManager", new { userId = user.UserId, Area = "Admin" })"><i class="bi bi-trash-fill mx-auto"></i></a>
+						</td>
+					</tr>
+					<tr class="js-edit-@user.UserName.GetHashCode() h-hidden">
+						<td></td>
+						<td>
+							<input type="text" name="userName" placeholder="username" value="@user.UserName" />
+							<input type="hidden" name="userId" value="@user.UserId" />
+						</td>
+						<td><input type="text" name="firstName" placeholder="" value="@user.FirstName" /></td>
+						<td><input type="text" name="lastName" placeholder="" value="@user.LastName" /></td>
+						<td><input type="text" name="email" placeholder="" value="@user.Email" /></td>
+						<td><input type="text" name="roles" placeholder="" value="@user.RolesText" /></td>
+						<td><button type="submit"
+							formaction="@Url.Action("EditUser", "UserManager", new { position = @Model.IndexOf(user), Area = "Admin" })">Save</button>
+						</td>
+					</tr>
+				}
+				<tr class="js-add-user h-hidden">
+					<td></td>
+					<td>
+						<input type="text" name="userNameAdd" placeholder="username" value="" />
+					</td>
+					<td><input type="text" name="firstNameAdd" placeholder="" value="" /></td>
+					<td><input type="text" name="lastNameAdd" placeholder="" value="" /></td>
+					<td><input type="text" name="emailAdd" placeholder="" value="" /></td>
+					<td><input type="text" name="rolesAdd" placeholder="" value="" /></td>
+					<td><button type="submit"
+							formaction="@Url.Action("AddUser", "UserManager", new { Area = "Admin" })">Add</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</user-list>

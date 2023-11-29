@@ -1,0 +1,525 @@
+﻿/*
+#
+# Colors
+#
+*/
+
+/* .c-bg-lightblue {
+  background-color: #f3f5f8;
+} */
+
+.c-bg-blue {
+  background-color: #c1ccda !important;
+}
+
+.c-bg-lightgrey {
+  background-color: #f6f6f6;
+}
+
+.c-bg-grey {
+  background-color: #e1e1e3 !important;
+}
+
+/* .c-bg-darkgrey {
+  background-color: #606060 !important;
+}
+
+.c-font-color-white {
+  color: white;
+} */
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 20px;
+}
+
+#WebTree span,
+#FileTree span {
+  cursor: pointer;
+}
+
+.editable {
+  cursor: pointer;
+}
+
+.editor {
+  background-color: #efefef;
+}
+
+.editor-head {
+  background-color: white;
+}
+
+.container-inline {
+}
+
+.fldchanged {
+  background-color: #fff3cd !important;
+  padding: 10px;
+  border: 1px solid #ffecb5;
+  border-radius: 5px;
+}
+
+.component {
+  padding: 0.5rem;
+}
+
+.color_dark {
+  background-color: cadetblue;
+}
+.icon_columns {
+  padding-left: 0.5rem;
+  width: 120px;
+  height: 50px;
+}
+.icon_columns .row {
+  width: 120px;
+}
+.icon_column {
+  height: 35px;
+  border: solid 2px black;
+  border-radius: 0.2rem;
+}
+
+.component .content {
+  margin: 0;
+}
+
+.component .row.action-bar {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+  margin-top: -0.75rem;
+}
+
+.editor-spacing {
+  padding: 1em;
+}
+
+.action-bar-fixed {
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50px;
+  background-color: #efefef;
+  border-left: 1px solid darkgray;
+  border-bottom: 1px solid darkgray;
+  border-right: 1px solid darkgray;
+  border-radius: 0 0 7px 7px;
+}
+
+page-editor > .action-bar {
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.action-bar {
+  font-size: 0.9em;
+  border-bottom: 1px solid lightgray;
+  padding: 0.4em;
+  margin-bottom: 1em;
+}
+.action-bar button {
+  margin: 0.2rem;
+}
+
+editor-add-component::shadow button {
+  margin: 0.2rem;
+  color: blue;
+}
+
+/*
+.action-bar button{
+	border-radius: 15px/50%;
+	box-sizing: border-box;
+	background-color: white;
+	border: 2px solid darkgrey;
+	cursor: pointer;
+	font-size: 1em;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+	padding: .2em .75em;
+	text-decoration: none;
+}
+*/
+
+.actionbar-divider {
+  margin-right: auto;
+}
+
+.action-bar-space {
+  height: 35px;
+}
+
+.content-editor-divider {
+  width: 30px;
+  height: 35px;
+  background-color: #f7f7f7;
+  margin-left: 15px;
+  border-right: 1px solid #dddddd;
+  margin-right: 10px;
+}
+
+.edit-row {
+  height: calc(100% - 70px);
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.icon-bar {
+  font-size: 20px;
+  border-bottom: 1px solid gray;
+  box-shadow: 0px 5px 5px lightgray;
+}
+
+.icon-bar > i {
+  margin-left: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.selected {
+  color: #007bff;
+  font-style: italic;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 
+.fld-group{
+	margin-bottom: 1rem;
+}
+
+.fld-group label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+.fld-group .control {
+	display: block;
+	width: 100%;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.fld-group .control-color {
+	display: block;
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.fld-group button, input {
+	overflow: visible;
+}
+
+.fld-group button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+} */
+
+/* .fld-group .flds-radio-group {
+  border: 1px solid #efefef;
+  padding: 1em;
+  margin-bottom: 1em;
+} */
+
+/*
+* Base Elements
+*/
+
+/* .c-btn {
+  border: 1px solid #606060;
+  background-color: #efefef;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.c-btn-light {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.01);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+} */
+
+.c-flex-right {
+  justify-content: flex-end;
+}
+
+.h-hidden {
+  display: none;
+}
+
+/*
+* Header
+*/
+
+.c-header {
+}
+
+.c-header div.active {
+  background-color: #fff;
+}
+
+.c-h-1 {
+  height: 1rem;
+}
+
+.c-header .c-h-item {
+  align-items: stretch;
+  display: flex;
+  padding: 1rem;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+/*
+* Actionbar
+*/
+
+/* .c-ab {
+  display: flex;
+  border-radius: 7px;
+  margin-top: 1rem;
+}
+
+.c-ab-item {
+  margin: 0.5em;
+}
+
+.c-ab-item-center {
+  align-items: stretch;
+  display: flex;
+}
+
+.c-ab ul {
+  list-style-type: none;
+  display: flex;
+} */
+
+.js-change-lang.active {
+  background-color: #c1cbda;
+  text-decoration: underline;
+}
+
+/*
+* Messages Container
+*/
+
+/* .messages {
+  border-radius: 7px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} */
+
+/*
+* Tab
+*/
+
+.c-tabs {
+  border-bottom: 2px solid #dddddd;
+}
+
+/* .c-tab-item .active {
+  background-color: #c1ccda !important;
+  border-left-color: #3f6088 !important;
+  border-right-color: #3f6088 !important;
+  border-top-color: #3f6088 !important;
+  border-bottom-color: #c1ccda !important;
+} */
+.c-tab-item .active {
+  /* background-color: white !important;
+  border-left-color: white !important;
+  border-right-color: white !important;
+  border-top-color: white !important; */
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-color: black !important;
+  border-bottom: black 3px solid;
+  font-weight: bold;
+}
+
+/* .c-tab-content {
+  padding: 2em;
+  background-color: #f3f4f4 !important;
+} */
+
+/*
+* Field
+*/
+
+/* .c-fld {
+  background-color: #dee4e9;
+  margin-bottom: 1rem;
+  padding: 0.5em;
+  color: #3f6088;
+} */
+
+.js-editor-field:last-child .c-fld {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* margin-bottom: 1.3em; */
+  background-color: white;
+}
+
+/* .c-fld-label {
+  font-weight: bold;
+} */
+
+/* .c-fld-af-menu {
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  padding: 0.5rem;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.c-fld-af-menu ul {
+  display: flex;
+  margin-bottom: 0;
+}
+.c-fld-af-menu li {
+  list-style-type: none;
+  margin-right: 0.7em;
+  display: inline-block;
+}
+.c-fld-af-menu li [type="checkbox"] {
+  border: 1px solid #4f78ab;
+}
+
+.c-fld-af-menu li [type="checkbox"]:checked {
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  background-color: #4f78ab;
+} */
+
+.c-fld-radio .form-check {
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+
+.c-fld-radio .form-check:hover {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.c-fld-radio .form-check.selected {
+  background-color: rgb(219, 240, 202);
+  border-radius: 5px;
+  border: gray 1px solid;
+}
+
+.c-fld-radio .form-check > input {
+  display: none;
+}
+
+/*
+* Misc
+*/
+
+.js-component-list {
+  margin: 0.25em;
+  padding-inline-start: 0;
+}
+
+.js-component-list li input {
+  display: none;
+}
+.js-component-list li.selected {
+  background-color: #ced4da;
+}
+
+.editor-ph-component {
+  /* margin: 0.5rem; */
+  /* margin-left: 3rem; */
+  /* margin-right: 2rem; */
+  /* padding: 0.5rem; */
+  /* border: #2f2f2f 2px solid;
+  border-radius: 0.375rem; */
+}
+
+/*
+* TREEVIEW
+*/
+
+/* .treeviewitem .header {
+  display: flex;
+  margin-bottom: 0.3em;
+  justify-content: space-between;
+  border: solid #eee 1px;
+  border-radius: 0 0 7px 7px;
+  padding: 0.5em 0.5em;
+}
+.treeviewitem .header:hover {
+  border-color: hsl(216, 94%, 73%);
+  border-radius: 7px;
+}
+.treeviewitem .header:active {
+  border-color: hsl(216, 94%, 73%);
+  border-radius: 7px;
+}
+.treeviewitem .header[selected] {
+  background-color: hsl(0, 0%, 97%);
+}
+.treeviewitem .header:focus-visible {
+  border-color: hsl(216, 94%, 73%);
+  border-radius: 7px;
+}
+.treeviewitem {
+  list-style-type: none;
+}
+.treeviewitem .left {
+  display: flex;
+}
+.treeviewitem .content {
+  padding-left: 1.5em;
+}
+.treeviewitem .tree-toggle {
+  margin-right: 0.3rem;
+}
+.treeviewitem .tree-icon {
+  margin-right: 0.5rem;
+}
+.treeviewitem {
+  margin: 0;
+  margin-bottom: 0.3em;
+}
+*/
+
+/* Need to find better place to put custom CSS */
+.treeviewitem[hidden] {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.active {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+.form-control:read-only {
+  background-color: #eeeeee;
+  border: none;
+  /* pointer-events: none; */
+}

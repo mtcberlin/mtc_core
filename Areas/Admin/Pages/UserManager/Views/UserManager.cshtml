@@ -1,0 +1,20 @@
+﻿@using MtcMvcCore.Core
+@model List<MtcMvcCore.Core.Models.Authentication.UserModel>
+@{
+	ViewBag.Title = "UserManager";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+	@await Component.InvokeAsync("CoreHeader")
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-12">
+				@await Html.PartialAsync($"~/{@Settings.PathsCorePath}/Areas/Admin/Pages/UserManager/Views/UserListWebComponent.cshtml")
+			</div>
+		</div>
+		
+	</div>
+

@@ -1,0 +1,19 @@
+﻿@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Helper
+@model MtcMvcCore.SharedComponents.CoreVideoPlayer.Models.CoreVideoPlayerModel
+@*
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@* <form action="#" method="post">
+	<input type="hidden" id="id" name="id" value="@Model.Id">
+	<div class="fld-group">
+		<label for="video">Video</label>
+		<input type="text" class="control js-editor-field" id="video" name="video" value="@Model.Video"
+			placeholder="">
+	</div>
+</form> *@
+
+<form action="#" method="post">
+	<input type="hidden" id="id" name="id" value="@Model.Id">
+	@Html.Edit().RenderVideoField(Model, i => i.Video, "Video")
+</form>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="page">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cache" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+                <xs:element name="seo" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+                <xs:element name="placeholders" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="placeholder" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="component" minOccurs="0" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="name" type="xs:string" />
+                                                <xs:attribute name="datasource" type="xs:string" />
+                                                <xs:attribute name="parameters" type="xs:string" />
+                                                <xs:attribute name="cache" type="xs:string" />
+                                                <xs:attribute name="view" type="xs:string" />
+                                                <xs:attribute name="renderingparameters" type="xs:string" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="layout" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="contentview" type="xs:string" minOccurs="0" />
+                            <xs:element name="pagelayout" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="meta" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string" minOccurs="0" />
+                            <xs:element name="descritption" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="information" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string" minOccurs="0" />
+                            <xs:element name="descritption" type="xs:string" minOccurs="0" />
+                            <xs:element name="keywords" type="xs:string" minOccurs="0" />
+                            <xs:element name="author" type="xs:string" minOccurs="0" />
+                            <xs:element name="robots" type="xs:string" minOccurs="0" />
+                            <xs:element name="copyright" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="assets" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="scripts" type="xs:string" minOccurs="0" />
+                            <xs:element name="csss" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="page" />
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

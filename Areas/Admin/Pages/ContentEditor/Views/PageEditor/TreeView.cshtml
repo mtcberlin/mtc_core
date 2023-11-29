@@ -1,0 +1,22 @@
+@using System.Text.Json;
+
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<div class="treeview">
+
+    @* <div class="row action-bar">
+         <button class="btn">
+            <i id="WebTreeView" class="bi bi-globe"></i>
+        </button> 
+            <i id="FileTreeView" class="bi bi-folder2-open"></i> 
+    </div> *@
+    <div class="content tree">
+        <core-contenteditortreeview 
+            data-api-subtreeitems="/api/core/contenteditor/gettreesubitems" 
+            data-api-iteminfo="/api/core/contenteditor/getiteminfo"
+        >
+			<core-contenteditortree-item type='root' title='core-root' id='11111111-1111-1111-1111-111111111111' data-has-subitems='true'></core-contenteditortree-item>
+		</core-contenteditortreeview>
+    </div>
+
+</div>

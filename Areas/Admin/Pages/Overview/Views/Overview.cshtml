@@ -1,0 +1,35 @@
+﻿@using MtcMvcCore.Core.HtmlHelper
+@using MtcMvcCore.Core.Models
+@using System.Collections.Generic
+@using MtcMvcCore.Core
+@model IEnumerable<IGrouping<string, AdminPageConfigurationModel>>
+@{
+	ViewBag.Title = "Overview";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+@await Component.InvokeAsync("CoreHeader")
+
+<div class="container">
+	@foreach (var group in Model)
+	{
+		<div class="row mb-3">
+			<h2>@group.Key</h2>
+			@foreach (var adminPage in group)
+			{
+				<a href='@Url.Action(adminPage.Action, adminPage.Controller, new { lang = Html.CurrentLanguage() })' class="card mb-3 col-md-3 core-card">
+					<div class="row g-0">
+						<div class="col-md-4">
+							@Html.Raw(adminPage.Icon)
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">@adminPage.DisplayName</h5>
+							</div>
+						</div>
+					</div>
+				</a>
+			}
+		</div>
+	}
+</div>

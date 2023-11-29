@@ -1,0 +1,49 @@
+﻿@model List<MtcMvcCore.Core.Models.Authentication.RoleModel>
+<role-list class="test">
+	<div>
+		<button id="AddRole" type="button">Add</button>
+	</div>
+	<form method="post" enctype="multipart/form-data">
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th>Name</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var role in Model)
+				{
+					<tr class="js-show-@role.Name.GetHashCode()">
+						<td><div class="name-cycle"><i class="bi bi-award-fill"></i></div></td>
+						<td>@role.Name</td>
+						<td>
+							<a class="js-edit-role" href="#"
+							data-role-name="@role.Name.GetHashCode()"><i class="bi bi-pencil-fill mx-auto"></i></a>
+							| <a href="@Url.Action("RemoveRole", "RoleManager", new { roleId = role.RoleId, Area = "Admin" })"><i class="bi bi-trash-fill mx-auto"></i></a>
+						</td>
+					</tr>
+					<tr class="js-edit-@role.Name.GetHashCode() h-hidden">
+						<td></td>
+						<td>
+							<input type="text" name="roleName" placeholder="name" value="@role.Name" />
+							<input type="hidden" name="roleId" value="@role.RoleId" />
+						</td>
+						<td><button type="submit"
+							formaction="@Url.Action("EditRole", "RoleManager", new { position = @Model.IndexOf(role), Area = "Admin" })">Save</button>
+						</td>
+					</tr>
+				}
+				<tr class="js-add-role h-hidden">
+					<td></td>
+					<td>
+						<input type="text" name="roleNameAdd" placeholder="name" value="" />
+					</td>
+					<td><button type="submit" formaction="@Url.Action("AddRole", "RoleManager")">Add</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</role-list>

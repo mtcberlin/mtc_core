@@ -1,0 +1,74 @@
+﻿@using MtcMvcCore.Core.Helper
+@using System.Text.Json;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - AdminArea</title>
+	<link rel="stylesheet" href="~/admin/css/core-bootstrap.min.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/admin/css/core.libs.min.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/admin/css/core-a11y-dialog-stylesheet.css" asp-append-version="true" />
+	<!-- <link rel="stylesheet" href="~/css/LayaWireframe.css" /> -->
+	<link rel="stylesheet" href="~/lib/bootstrap-icons/font/bootstrap-icons.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/admin/css/admin.min.css" asp-append-version="true" />
+	<link rel="stylesheet" href="~/admin/css/core.webc.min.css" asp-append-version="true" />
+	<script src="~/lib/qrcode/qrcode.js" asp-append-version="true"></script>
+	<script src="~/admin/js/core.webc.min.js" asp-append-version="true"></script>
+</head>
+<body style="overscroll-behavior: none;">
+
+	@{
+        string[]  keys = {
+                "OK", 
+                "Cancel", 
+                "Simple Language", 
+                "Sign language video",
+                "Add Link",
+                "Edit Link",
+                "Delete Link",
+                "Text",
+                "Typ",
+                "Link",
+                "Icon",
+                "Target",
+                "Size",
+                "Add Image",
+                "Add Image Text",
+                "Image",
+                "Image Preview",
+                "Caption",
+                "Caption Simple Language",
+                "Image Description",
+                "Image Description Simple Language",
+                "Link Target New Page",
+                "Link Target Same Page",
+                "Link Url",
+                "Icon",
+                "Add",
+                "Delete",
+                "Select Video",
+                "Select File",
+                "Select Image",
+                "Add Video",
+                "Add Video Text",
+                "Delete Video"
+        };
+
+        var translations = Translation.TranslateByKeys(keys);
+        var transLationString = JsonSerializer.Serialize(translations);
+
+}
+
+<div class="hidden js-translations" data-translations="@transLationString"></div>
+
+    <main class="h-100 d-flex">
+		@RenderBody()
+	</main>		
+	
+	<script src="~/admin/js/core.libs.min.js" asp-append-version="true"></script>
+	@RenderSection("Scripts", required: false)
+	<core-loader id="loading-spin"></core-loader>
+</body>
+</html>

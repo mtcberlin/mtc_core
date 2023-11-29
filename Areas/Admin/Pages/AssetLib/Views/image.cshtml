@@ -1,0 +1,44 @@
+﻿@using MtcMvcCore.Core.Constants.Image
+@using MtcMvcCore.Core.Models.Media
+@model CoreImage
+
+
+<div class="fld-group">
+	<label for="id">Id</label>
+	<input type="text" class="control js-editor-field" id="id" name="id" value="@Model.Id" disabled="disabled"/>
+</div>
+<div class="fld-group">
+	<label for="name">Name</label>
+	<input type="text" class="control js-editor-field" id="name" name="name" value="@Model.Name" />
+</div>
+<div class="fld-group js-img-input @(string.IsNullOrEmpty(Model.MimeType) ? string.Empty : "h-hidden")">
+	<label for="image">Image</label>
+	<input type="file" class="control js-editor-field" id="image" name="image" />
+</div>
+<div class="fld-group js-img-view @(string.IsNullOrEmpty(Model.MimeType) ? "h-hidden" : string.Empty)">
+	<label for="image">Image</label>
+	<div><button type="button" class="js-delete-image">Delete</button></div>
+	<div style="height: 200px">
+		<img style="height: 100%" src='/uploads/@Model.Id/@Model.FileName' />
+	</div>
+	<div>
+		<p class="js-img-width">Width: @Model.Width</p>
+		<p class="js-img-height">Height: @Model.Height</p>
+	</div>
+</div>
+<div class="fld-group">
+	<label for="alt">Alt</label>
+	<input type="text" class="control js-editor-field" id="alt" name="alt" value="@Model.Caption.Value" />
+</div>
+<div class="fld-group">
+	<label for="AltSimple">AltSimple</label>
+	<input type="text" class="control js-editor-field" id="AltSimple" name="altSimple" value="@Model.Caption.SimpleText" />
+</div>
+<div class="fld-group">
+	<label for="isoCode">IsoCode</label>
+	<select type="text" class="control js-editor-field" id="isoCode" name="isoCode">
+		<option value=""></option>
+		<option value="de">de</option>
+		<option value="en">en</option>
+	</select>
+</div>

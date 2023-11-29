@@ -1,0 +1,63 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Controller
+@using MtcMvcCore.Core
+@using Microsoft.AspNetCore.Mvc.Localization
+@using MtcMvcCore.Core.Helper
+
+@inject IHtmlLocalizer<ContentEditorController> Localizer
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<nav class="w-100">
+	<div class="d-flex w-100 justify-content-between bd-highlight p-3">
+		<div class="d-flex">
+			<button id="SavePage" class="me-1 btn btn-correct-green d-flex align-items-center justify-content-center" disabled>
+				<i class="bi bi-save me-2"></i>
+				<span>@Translation.Translate("Save")</span>
+			</button>
+			<button id="DeleteBtn" class="me-1 btn btn-dark d-flex align-items-center justify-content-center" data-delete-url='@Url.Action("DeletePage", "ContentEditor", new { Area = "Admin"})'>
+				<i class="bi bi-trash me-2"></i>
+				<span>@Translation.Translate("Delete")</span>
+			</button>
+			<button class="me-1 js-export btn btn-dark d-flex align-items-center justify-content-center" href="#">
+				<i class="bi bi-box-arrow-up-right me-2"></i>
+				@Translation.Translate("Export")
+			</button>
+			<a class="btn btn-light border d-flex align-items-center justify-content-center me-1 js-preview me-auto" href="#" target="_blank">
+				<i class="bi bi-globe me-2"></i>
+				<span>
+					@Translation.Translate("Preview")
+				</span>
+			</a>
+		</div>
+		<div class="d-flex w-100 justify-content-end">
+			<div class="dropdown">
+				<button class="dropdown-toggle js-current-lang btn btn-dark d-flex align-items-center justify-content-center rounded-0 rounded-start" type="button" id="langSelectMenu" data-bs-toggle="dropdown" aria-expanded="false">
+					currentlang
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="langSelectMenu">
+						@foreach (var lang in Settings.AllowedLanguage)
+						{
+							<li class="js-change-lang h-hidden" data-lang="@lang">
+								<button class="p-2 px-4 w-100">@lang</button>
+							</li>
+						}
+					</ul>
+			</div>
+			<button type="button" class="btn btn-core-gray c-bg-darkgrey c-font-color-white js-add-lang d-flex align-items-center justify-content-center rounded-0 rounded-end text-nowrap">
+				<i class="bi bi-plus-circle me-2"></i>
+				@Translation.Translate("AddLanguage")
+			</button>
+		</div>
+		<core-modal title='@Translation.Translate("AddLanguage")'>
+			<ul class="row">
+				@foreach (var lang in Settings.AllowedLanguage)
+				{
+					<li class="row">
+						<input type="radio" class="btn-check js-languages-to-add" value="@lang"
+							name="languageVerion" id="@lang" autocomplete="off">
+						<label class="btn btn-outline-primary" for="@lang">@Localizer[@lang]</label>
+					</li>
+				}
+			</ul>
+		</core-modal>	
+	</div>
+</nav>

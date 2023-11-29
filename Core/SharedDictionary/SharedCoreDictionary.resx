@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="de" xml:space="preserve">
+    <value>Deusch</value>
+    <comment/>
+  </data>
+  <data name="en" xml:space="preserve">
+    <value>Englisch</value>
+    <comment/>
+  </data>
+  <data name="it" xml:space="preserve">
+    <value>Italienisch</value>
+    <comment/>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Information</value>
+    <comment/>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>Allgemein</value>
+    <comment/>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Speichern</value>
+    <comment/>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+    <comment/>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exportieren</value>
+    <comment/>
+  </data>
+  <data name="AddLanguage" xml:space="preserve">
+    <value>Sprache hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Preview" xml:space="preserve">
+    <value>Vorschau</value>
+    <comment/>
+  </data>
+  <data name="GroupId" xml:space="preserve">
+    <value>ID</value>
+    <comment/>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Sprache</value>
+    <comment/>
+  </data>
+  <data name="Public visible" xml:space="preserve">
+    <value>Öffentlich sichtbar</value>
+    <comment/>
+  </data>
+  <data name="Page Title" xml:space="preserve">
+    <value>Seitentitel</value>
+    <comment/>
+  </data>
+  <data name="Layout" xml:space="preserve">
+    <value>Darstellung</value>
+    <comment/>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>erzeugt von</value>
+    <comment/>
+  </data>
+  <data name="UpdatedBy" xml:space="preserve">
+    <value>geändert von</value>
+    <comment/>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>erzeugt am</value>
+    <comment/>
+  </data>
+  <data name="Updated" xml:space="preserve">
+    <value>geändert am</value>
+    <comment/>
+  </data>
+  <data name="Security" xml:space="preserve">
+    <value>Sicherheit</value>
+    <comment/>
+  </data>
+  <data name="Content Layout Columns" xml:space="preserve">
+    <value>Spaltendarstellung Inhalt</value>
+    <comment/>
+  </data>
+  <data name="Page Layout" xml:space="preserve">
+    <value>Seitendarstellung</value>
+    <comment/>
+  </data>
+  <data name="Display Name" xml:space="preserve">
+    <value>Name (Darstellung)</value>
+    <comment/>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Inhalt</value>
+    <comment/>
+  </data>
+  <data name="Placeholder" xml:space="preserve">
+    <value>Platzhalter</value>
+    <comment/>
+  </data>
+  <data name="Unused Components" xml:space="preserve">
+    <value>Nicht zugeordnete Komponenten</value>
+    <comment/>
+  </data>
+  <data name="Add Component" xml:space="preserve">
+    <value>Komponente hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Edit Component" xml:space="preserve">
+    <value>Komponente bearbeiten</value>
+    <comment/>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>Ok</value>
+    <comment/>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+    <comment/>
+  </data>
+  <data name="Simple Language" xml:space="preserve">
+    <value>Einfache Sprache</value>
+    <comment/>
+  </data>
+  <data name="Sign language video" xml:space="preserve">
+    <value>Gebärdensprache Video</value>
+    <comment/>
+  </data>
+  <data name="Add Link" xml:space="preserve">
+    <value>Link hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Edit Link" xml:space="preserve">
+    <value>Link bearbeiten</value>
+    <comment/>
+  </data>
+  <data name="Delete Link" xml:space="preserve">
+    <value>Link löschen</value>
+    <comment/>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Ziel</value>
+    <comment/>
+  </data>
+  <data name="Size" xml:space="preserve">
+    <value>Größe</value>
+    <comment/>
+  </data>
+  <data name="Add Image" xml:space="preserve">
+    <value>Bild hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Add Image Text" xml:space="preserve">
+    <value>Bild hinzufügen Text</value>
+    <comment/>
+  </data>
+  <data name="Image" xml:space="preserve">
+    <value>Bild</value>
+    <comment/>
+  </data>
+  <data name="Image Preview" xml:space="preserve">
+    <value>Bildvorschau</value>
+    <comment/>
+  </data>
+  <data name="Caption" xml:space="preserve">
+    <value>Bildunterschrift</value>
+    <comment/>
+  </data>
+  <data name="Caption Simple Language" xml:space="preserve">
+    <value>Bildunterschrift einfache Sprache</value>
+    <comment/>
+  </data>
+  <data name="Image Description" xml:space="preserve">
+    <value>Bildbeschreibung</value>
+    <comment/>
+  </data>
+  <data name="Image Description Simple Language" xml:space="preserve">
+    <value>Bildbeschreibung einfache Sprache</value>
+    <comment/>
+  </data>
+  <data name="Link Target New Page" xml:space="preserve">
+    <value>Link öffnet neues Fenster</value>
+    <comment/>
+  </data>
+  <data name="Link Target Same Page" xml:space="preserve">
+    <value>Link öffnet sich im gleichen Fenster</value>
+    <comment/>
+  </data>
+  <data name="Link Url" xml:space="preserve">
+    <value>Link Url</value>
+    <comment/>
+  </data>
+  <data name="Icon" xml:space="preserve">
+    <value>Icon</value>
+    <comment/>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Close Dialog" xml:space="preserve">
+    <value>Schließen</value>
+    <comment/>
+  </data>
+  <data name="Select Image" xml:space="preserve">
+    <value>Bild auswählen</value>
+    <comment/>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Quelle</value>
+    <comment/>
+  </data>
+  <data name="Select Video" xml:space="preserve">
+    <value>Video auswählen</value>
+    <comment/>
+  </data>
+  <data name="Select File" xml:space="preserve">
+    <value>Datei auswählen</value>
+    <comment/>
+  </data>
+  <data name="Add Video" xml:space="preserve">
+    <value>Video hinzufügen</value>
+    <comment/>
+  </data>
+  <data name="Add Video Text" xml:space="preserve">
+    <value>Text</value>
+    <comment/>
+  </data>
+  <data name="Delete Video" xml:space="preserve">
+    <value>Video löschen</value>
+    <comment/>
+  </data>
+  <data name="SectionTitleProfiles" xml:space="preserve">
+    <value>Profile</value>
+    <comment/>
+  </data>
+  <data name="SectionSettingsMade" xml:space="preserve">
+    <value>Vorgenomenne Einstellungen</value>
+    <comment/>
+  </data>
+  <data name="SectionAllSettings" xml:space="preserve">
+    <value>Alle Einstellungen</value>
+    <comment/>
+  </data>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Anpassung der Barrierefreiheit</value>
+    <comment/>
+  </data>
+  <data name="DialogClose" xml:space="preserve">
+    <value>Schließen</value>
+    <comment/>
+  </data>
+  <data name="DialogResetAllSettingsAndProfiles" xml:space="preserve">
+    <value>Alle Einstellungen und Profile zurücksetzen</value>
+    <comment/>
+  </data>
+  <data name="DialogReset" xml:space="preserve">
+    <value>Zurücksetzen</value>
+    <comment/>
+  </data>
+  <data name="SectionTitleSettingsMade" xml:space="preserve">
+    <value>Ausgewählte Einstellungen</value>
+    <comment/>
+  </data>
+  <data name="SectionTitleAllSettings" xml:space="preserve">
+    <value>Alle Einstellungen</value>
+    <comment/>
+  </data>
+  <data name="ProfileEasyLang" xml:space="preserve">
+    <value>Leichte Sprache</value>
+    <comment/>
+  </data>
+  <data name="ProfileEasyLangDescription" xml:space="preserve">
+    <value>Beschreibung Profil leichte Sprache ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileLimitedVision" xml:space="preserve">
+    <value>Eingeschränktes Sehen</value>
+    <comment/>
+  </data>
+  <data name="ProfileLimitedVisionDescription" xml:space="preserve">
+    <value>Beschreibung Profil eingeschränktes Sehen ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileBlind" xml:space="preserve">
+    <value>Blind</value>
+    <comment/>
+  </data>
+  <data name="ProfileBlindDescription" xml:space="preserve">
+    <value>Beschreibung Profil Bild ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileLimitedHear" xml:space="preserve">
+    <value>Eingeschränktes Hören</value>
+    <comment/>
+  </data>
+  <data name="ProfileLimitedHearDescription" xml:space="preserve">
+    <value>Beschreibung Porfil eingeschränktes Hören ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileDgs" xml:space="preserve">
+    <value>DGS</value>
+    <comment/>
+  </data>
+  <data name="ProfileDgsDescription" xml:space="preserve">
+    <value>Beschreibung Profil DGS ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileMotorAssistance" xml:space="preserve">
+    <value>Motorische Hilfe</value>
+    <comment/>
+  </data>
+  <data name="ProfileMotorAssistanceDescription" xml:space="preserve">
+    <value>Beschreibung Profil motorische Hilfe ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileConcentratationDeficit" xml:space="preserve">
+    <value>Konzentrations- und Wahrnehmungsdefizit</value>
+    <comment/>
+  </data>
+  <data name="ProfileConcentratationDeficitDescription" xml:space="preserve">
+    <value>Beschreibung Profil Konzentrations- und Wahrnehmungsdefizit ...</value>
+    <comment/>
+  </data>
+  <data name="ProfileLowLiterated" xml:space="preserve">
+    <value>Gering Literisiert</value>
+    <comment/>
+  </data>
+  <data name="ProfileLowLiteratedDescription" xml:space="preserve">
+    <value>Beschreibung Profil Gering Literisiert ...</value>
+    <comment/>
+  </data>
+  <data name="SettingReadTextsAloud" xml:space="preserve">
+    <value>Texte vorlesen</value>
+    <comment/>
+  </data>
+  <data name="SettingEasyLayout" xml:space="preserve">
+    <value>Einfaches Layout</value>
+    <comment/>
+  </data>
+  <data name="SettingFontSize" xml:space="preserve">
+    <value>Schriftgröße</value>
+    <comment/>
+  </data>
+  <data name="SettingLineSpacing" xml:space="preserve">
+    <value>Zeilen Abstand</value>
+    <comment/>
+  </data>
+  <data name="SettingCharacterSpacing" xml:space="preserve">
+    <value>Zeichen Abstand</value>
+    <comment/>
+  </data>
+  <data name="SettingWordSpacing" xml:space="preserve">
+    <value>Wörter Abstand</value>
+    <comment/>
+  </data>
+  <data name="SettingFontColor" xml:space="preserve">
+    <value>Schriftfarbe</value>
+    <comment/>
+  </data>
+  <data name="SettingBackgroundColor" xml:space="preserve">
+    <value>Hintergrundfarbe</value>
+    <comment/>
+  </data>
+  <data name="SettingDyslexiaFont" xml:space="preserve">
+    <value>Lesbare Schriftart für Legastemie</value>
+    <comment/>
+  </data>
+  <data name="SettingImageSaturation" xml:space="preserve">
+    <value>Bild Sättigung</value>
+    <comment/>
+  </data>
+  <data name="SettingButtonSize" xml:space="preserve">
+    <value>Button Größe</value>
+    <comment/>
+  </data>
+  <data name="SettingHighContrast" xml:space="preserve">
+    <value>Hoher Kontrast</value>
+    <comment/>
+  </data>
+  <data name="SettingHeadlineBigger" xml:space="preserve">
+    <value>Überschriften vergrößern</value>
+    <comment/>
+  </data>
+  <data name="SettingHighlightLinks" xml:space="preserve">
+    <value>Links hervorheben</value>
+    <comment/>
+  </data>
+  <data name="SettingHighlightForm" xml:space="preserve">
+    <value>Formularfelder hervorheben</value>
+    <comment/>
+  </data>
+  <data name="SettingHideImage" xml:space="preserve">
+    <value>Bilder ausblenden</value>
+    <comment/>
+  </data>
+  <data name="SettingEasyLanguage" xml:space="preserve">
+    <value>Leichte Sprache</value>
+    <comment/>
+  </data>
+  <data name="SettingDgs" xml:space="preserve">
+    <value>Dgs Video anzeigen</value>
+    <comment/>
+  </data>
+  <data name="SettingDialogFeedback" xml:space="preserve">
+    <value>Dialog Ton-Feedback</value>
+    <comment/>
+  </data>
+  <data name="DialogAriaLabelSetting" xml:space="preserve">
+    <value>Einstellung</value>
+    <comment/>
+  </data>
+  <data name="DialogAriaLabelProfile" xml:space="preserve">
+    <value>Profil</value>
+    <comment/>
+  </data>
+  <data name="DialogSelect" xml:space="preserve">
+    <value>auswählen</value>
+    <comment/>
+  </data>
+  <data name="DialoagAriaLabelColorSetting" xml:space="preserve">
+    <value>Farbeinstellung</value>
+    <comment/>
+  </data>
+  <data name="CloseAccessibilityDialog" xml:space="preserve">
+    <value>Accessibility Dialog schließen</value>
+    <comment/>
+  </data>
+  <data name="SignOut" xml:space="preserve">
+    <value>Abmelden</value>
+    <comment/>
+  </data>
+</root>

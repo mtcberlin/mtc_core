@@ -1,0 +1,36 @@
+﻿@using MtcMvcCore.Core
+@model Dictionary<string, string>
+@{
+	ViewBag.Title = "title";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+	@await Component.InvokeAsync("CoreHeader")
+
+
+	<div class="container-fluid">
+
+		<div class="row">
+			<table class="table table-striped">
+				<thead>
+				<tr>
+					<th scope="col">CacheKey</th>
+					<th scope="col">Type</th>
+					<th scope="col">@Html.ActionLink("RemoveAll", "Index",  new { remove = "all", Area = "Admin" })</th>
+				</tr>
+				</thead>
+				<tbody>
+				@foreach (var cache in Model)
+				{
+					<tr>
+						<td>@cache.Key</td>
+						<td>@cache.Value</td>
+						<td>@Html.ActionLink("Remove", "Index", new { remove = cache.Key, type = cache.Value, Area = "Admin" })</td>
+					</tr>
+				}
+				</tbody>
+			</table>
+		</div>
+		
+	</div>
+

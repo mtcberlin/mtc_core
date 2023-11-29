@@ -1,0 +1,118 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Helper
+@using MtcMvcCore.Core
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+	
+<div class="pt-3 m-2">
+
+	<div class="mb-3">
+		<label for="formGroupExampleInput" class="form-label">Layout</label>
+		<div class="form-control">
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="inlineCheckbox1" value="option1">
+				<label class="form-check-label" for="inlineCheckbox1">
+					<div class="icon_columns">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 icon_column"></div>
+							</div>        
+						</div>
+					</div>
+				</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="inlineCheckbox2" value="option1">
+				<label class="form-check-label" for="inlineCheckbox1">
+					<div class="icon_columns">
+						<div class="container">
+							<div class="row">
+								<div class="col-6 icon_column"></div>
+								<div class="col-6 icon_column"></div>
+							</div>        
+						</div>
+					</div>
+				</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="inlineCheckbox3" value="option1">
+				<label class="form-check-label" for="inlineCheckbox1">
+					<div class="icon_columns">
+						<div class="container">
+							<div class="row">
+								<div class="col-3 icon_column"></div>
+								<div class="col-6 icon_column"></div>
+								<div class="col-3 icon_column"></div>
+							</div>        
+						</div>
+					</div>
+				</label>
+			</div>
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="inlineCheckbox4" value="option2">
+				<label class="form-check-label" for="inlineCheckbox2">
+					<div class="icon_columns">
+						<div class="container">
+							<div class="row">
+								<div class="col-3 icon_column"></div>
+								<div class="col-9 icon_column"></div>
+							</div>        
+						</div>
+					</div>
+				</label>
+			</div>                                            
+			<div class="form-check form-check-inline">
+				<input class="form-check-input" type="radio" name="flexRadioDefault" id="inlineCheckbox5" value="option2">
+				<label class="form-check-label" for="inlineCheckbox2">
+					<div class="icon_columns">
+						<div class="container">
+							<div class="row">
+								<div class="col-9 icon_column"></div>
+								<div class="col-3 icon_column"></div>
+							</div>        
+						</div>
+					</div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+
+						<core-panel expanded='true'>
+						<span slot='title'>Placeholders</span>
+						<div slot='content'>
+							<div class="js-placeholder-content"></div>
+						</div>
+					</core-panel>
+
+
+	<div class="mb-3">
+		<label for="formGroupExampleInput" class="form-label">Components</label>
+		<div class="form-control">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 border">
+						<button>Add Component</button>
+					</div>
+					<div class="col-8 border">
+						<button>Add Component</button>
+					</div>
+				</div>    
+			</div>
+		</div>
+	</div>
+
+	<div class="mb-3">
+		<label for="formGroupExampleInput" class="form-label">unused Components</label>
+		<div class="form-control">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 border">
+					</div>
+				</div>    
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+   

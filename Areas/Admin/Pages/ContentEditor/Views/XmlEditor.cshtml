@@ -1,0 +1,16 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Services
+@using System.Text
+@using Microsoft.AspNetCore.Html
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models
+@using MtcMvcCore.Core
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<div class="js-xml-editor h-hidden">
+    <div class="row icon-bar">
+        <span class="content-editor-divider"></span>
+        <i id="Save-Btn" class="bi bi-save2" title="Speichern"></i>
+        @*<i class="bi bi-cloud-download" title="Herunterladen"></i>*@
+    </div>
+    <textarea id="editor"></textarea>
+</div>
+

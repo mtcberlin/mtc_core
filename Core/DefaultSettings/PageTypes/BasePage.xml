@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pagetype>
+	<name>BasePage</name>
+	<model>MtcMvcCore.Core.Models.PageModels.BasePage</model>
+	<displayName>Page</displayName>
+	<insertOptions>
+		<insertOption>BasePage</insertOption>
+	</insertOptions>
+</pagetype>

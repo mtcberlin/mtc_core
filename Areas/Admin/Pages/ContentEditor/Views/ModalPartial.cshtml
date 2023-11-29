@@ -1,0 +1,18 @@
+﻿@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ModalViewModel
+
+<div class="modal fade" id="@(Model.LabelInputField)AddModal" tabindex="-1" role="dialog" aria-labelledby="@(Model.LabelInputField)AddModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="fld-group">
+					<label for="@Model.LabelInputField">@Model.LabelInputField</label>
+					<input type="text" class="control" id="@Model.LabelInputField" placeholder="@Model.Placeholder" />
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">@Model.LabelCancel</button>
+				<button type="button" class="btn btn-primary @Model.OkActionClass">@Model.LabelOk</button>
+			</div>
+		</div>
+	</div>
+</div>

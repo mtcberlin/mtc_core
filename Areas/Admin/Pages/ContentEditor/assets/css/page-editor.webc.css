@@ -1,0 +1,3 @@
+.js-change-lang:not(.active) > button {
+	background-color: inherit !important;
+}

@@ -1,0 +1,25 @@
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<editor-messages data-rows=1 class="js-messages">
+	<template id="info">
+		<div class="alert alert-success d-flex align-items-center" role="alert">
+			<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+			<div class="message"></div>
+		</div>
+	</template>
+	<template id="warning">
+		<div class="alert alert-warning d-flex align-items-center" role="alert">
+			<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+			<div class="message"></div>
+		</div>
+	</template>
+	<template id="error">
+		<div class="alert alert-danger d-flex align-items-center" role="alert">
+			<svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+			<div class="message"></div>
+		</div>
+	</template>
+
+	<div class="messages"></div>
+
+</editor-messages>

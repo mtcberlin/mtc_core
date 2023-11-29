@@ -1,0 +1,38 @@
+﻿@using MtcMvcCore.Core
+@{
+	ViewBag.Title = "CMS Anmeldung";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container h-100">
+
+	<form asp-route="admin_area" asp-route-returnurl="/admin/overview" method="post" class="h-100 position-relative">
+		<div class="position-absolute top-50 start-50 translate-middle"
+			style="width: 300px;background-color: #C6D6BE;color: black;padding: 20px;">
+
+			<legend>Anmelden</legend>
+
+			<div class="mb-3">
+				<label for="username" class="form-label">Email</label>
+				<input id="username" type="text" name="username" class="form-control" value="" placeholder="username"
+					required>
+			</div>
+			<div class="mb-3">
+				<label for="password" class="form-label">Password</label>
+				<input id="password" type="password" name="password" class="form-control" value=""
+					placeholder="password" required>
+			</div>
+
+			<div class="form-check mb-5">
+				<input class="form-check-input" type="checkbox" value="" id="customControlInline">
+				<label class="form-check-label" for="customControlInline">
+					Remember me
+				</label>
+			</div>
+
+			<div class="d-grid gap-2">
+				<button type="submit" class="btn btn-primary">Login</button>
+			</div>
+		</div>
+	</form>
+</div>

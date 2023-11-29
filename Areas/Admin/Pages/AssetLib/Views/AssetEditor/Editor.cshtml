@@ -1,0 +1,22 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Helper
+@using MtcMvcCore.Core
+@model MtcMvcCore.Core.Models.Media.CoreMediaFolder
+
+<asset-editor data-url-load="/api/core/assetlib/getitem" data-url-save="/api/core/assetlib/saveitem" class="d-none">
+
+	<div class="sticky-top editor-head top-4 border-bottom">
+
+                <div class="p-3">
+                        @await Html.PartialAsync("EditorActions.cshtml")
+                        <div class="container-inline">
+                                @await Html.PartialAsync("EditorMessages.cshtml")
+                        </div>
+                </div>
+
+                <div class="mb-3">
+                        @await Html.PartialAsync("PaneContent.cshtml")
+                </div>
+	</div>
+
+</asset-editor>
+

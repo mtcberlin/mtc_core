@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<component>
+	<displayName>Core Video Player</displayName>
+	<description>a basic video player component</description>
+	<previewImg></previewImg>
+	<caching Cacheable="true" VaryByDatasource="true" VaryByQueryString="true" VaryByDevice="true"></caching>
+	<editorModel>MtcMvcCore.SharedComponents.CoreVideoPlayer.Models.CoreVideoPlayerModel</editorModel>
+</component>

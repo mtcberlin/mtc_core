@@ -1,0 +1,51 @@
+@using MtcMvcCore.Areas.Admin.Pages.ContentEditor.Helper
+@using MtcMvcCore.Core
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+
+<div class=js-page-editor h-hidden>
+
+	<page-editor data-url-load="/admin/contenteditor/page/getItemProperties" data-url-save="/admin/contenteditor/page/saveItemProperties" class="">
+
+		<div class="row action-bar">
+			<core-feedback-button id="SavePage">
+				<button class="btn">
+				<i class="bi bi-save2" title="Speichern"></i>
+				Save
+				</button>
+			</core-feedback-button>
+			<button id="DeleteBtn" class="btn">
+				<i class="bi bi-trash"
+					data-delete-url='@Url.Action("DeletePage", "ContentEditor", new { Area = "Admin" })'> Delete </i>
+			</button>
+			<span class="actionbar-divider"></span>
+			@foreach (var lang in Settings.AllowedLanguage)
+			{
+				<button class="btn">
+					<span class="js-change-lang" data-lang="@lang"> @lang </span>
+				</button>
+
+			}
+			<span class="ja-versions"></span>
+		</div>
+		<div class="content ">
+			<div class="js-no-version h-hidden">No Version existing. <span class="js-create-version">Create a new
+					one</span></div>
+			<div class="js-version h-hidden">
+				<core-accordion data-allow-multiple>
+					<form id="PageFields" action="#" method="post" slot="item" >
+						@Html.Edit().RenderPageEditorFields()
+					</form>
+
+					<core-panel expanded='true'>
+						<span slot='title'>Placeholders</span>
+						<div slot='content'>
+							<div class="js-placeholder-content"></div>
+						</div>
+					</core-panel>
+				</core-accordion>
+			</div>
+		</div>
+
+	</page-editor>
+
+</div>

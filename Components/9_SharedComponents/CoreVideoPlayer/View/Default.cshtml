@@ -1,0 +1,41 @@
+@using MtcMvcCore.Core.HtmlHelper
+@using Newtonsoft.Json
+
+@model MtcMvcCore.SharedComponents.CoreVideoPlayer.Models.CoreVideoPlayerModel
+
+@{
+	var s = JsonConvert.DeserializeObject<Dictionary<string, int>>(JsonConvert.SerializeObject(ViewData["PlaceholderSizes"]));
+}
+
+@* TODO move style *@
+<style>
+	.laya-seekbar 
+	{  
+	  cursor: pointer;
+	  height:  0.5rem;
+	  overflow: hidden;
+	  position: relative;
+	  width: 100%;
+	}
+	
+	.laya-seekbar span
+	{
+	  background-color: papayawhip;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 10px;
+	  width: 0;
+	}
+</style>
+
+<div>
+	@*<core-video-player class='d-flex flex-column @(s["xl"] > 400 || Html.IsEasyLanguage() ? "flex-lg-row" : string.Empty)' data-video-id="@Model.Video.AssetId">*@
+	<core-video-player class='d-flex flex-column @(s["xl"] > 400 || Html.IsEasyLanguage() ? "flex-lg-row" : string.Empty)' 
+	                   data-video-id="@Model.Video.AssetId"
+	                   data-video-main-content-copyright="@Model.CoreVideo.Copyright"
+	                   data-video-main-content-source="@Model.CoreVideo.Source"
+	                   data-video-dgs-content-copyright="@Model.CoreVideo.CopyrightDgs"
+	                   data-video-dgs-content-source="@Model.CoreVideo.SourceDgs">
+	</core-video-player>
+</div>

@@ -1,0 +1,28 @@
+﻿@using MtcMvcCore.Core
+@model MtcMvcCore.Areas.Admin.Pages.ContentEditor.Models.ContentEditorTreeViewModel
+@{
+	ViewBag.Title = "Content Editor";
+	Layout = $"~/{Settings.PathsCorePath}/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/admin/css/contentEditor.min.css" />
+@await Component.InvokeAsync("CoreHeader")
+
+<div class="d-flex w-100">
+	<div class="col-3 vh-100 overflow-auto bg-light border-end border-gray-light">
+		<div class="d-flex h-4 border-bottom bg-light align-items-end sticky-top">
+			<h3 class="ms-3 mb-1 fw-bold">Content</h3>
+		</div>
+		<div class="">
+			@await Html.PartialAsync("PageEditor/TreeView.cshtml")
+		</div>
+	</div>
+	<div class="col-9 bg-white vh-100 overflow-auto">
+		<div class="d-flex h-4 border-bottom border-gray-light bg-white align-items-end sticky-top">
+			<h3 class="ms-3 mb-1 fw-bold">Content Editor</h3>
+		</div>
+		<div class="">
+			@await Html.PartialAsync("PageEditor/Editor.cshtml")
+		</div>
+	</div>
+</div>

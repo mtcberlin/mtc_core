@@ -1,0 +1,16 @@
+﻿user-list table {
+	width: 100%;
+}
+
+user-list tr {
+	height: 50px;
+}
+
+user-list .name-cycle {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+	vertical-align: middle;
+	line-height: 50px;
+	font-size: 30px;
+}
