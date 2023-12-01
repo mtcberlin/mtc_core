@@ -107,7 +107,7 @@ class CoreModal extends HTMLElement {
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            border-radius: 5px;
+            // border-radius: 5px;
 						height: 80%;
             min-width: 80%;
             max-width: 85%;
