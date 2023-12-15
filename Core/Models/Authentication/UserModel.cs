@@ -18,6 +18,9 @@ namespace MtcMvcCore.Core.Models.Authentication
 	{
 		public Guid UserId { get; set; }
 
+		[XmlAttribute(AttributeName = "isActive")]
+		public bool IsActive { get; set; }
+
 		[XmlAttribute(AttributeName = "username")]
 		public string UserName { get; set; }
 
@@ -51,6 +54,7 @@ namespace MtcMvcCore.Core.Models.Authentication
 		{
 			return new UserModel
 			{
+				IsActive = user.EmailConfirmed,
 				UserId = user.Id,
 				FirstName = user.FirstName,
 				LastName = user.LastName,

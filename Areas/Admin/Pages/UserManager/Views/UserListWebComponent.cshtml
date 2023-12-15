@@ -8,11 +8,13 @@
 			<thead>
 				<tr>
 					<th></th>
+					<th>IsActive</th>
 					<th>User Name</th>
 					<th>Vorname</th>
 					<th>Nachname</th>
 					<th>Email</th>
 					<th>Rollen</th>
+					<th></th>
 					<th></th>
 				</tr>
 			</thead>
@@ -21,18 +23,22 @@
 				{
 					<tr class="js-show-@user.UserName.GetHashCode()">
 						<td><div class="name-cycle"><i class="bi bi-person-circle"></i></div></td>
+						<td>@user.IsActive</td>
 						<td>@user.UserName</td>
 						<td>@user.FirstName</td>
 						<td>@user.LastName</td>
 						<td>@user.Email</td>
 						<td>@user.RolesText</td>
-						<td>
+						<td colspan="2">
 							<a class="js-edit-user" href="#" data-user-name="@user.UserName.GetHashCode()"><i class="bi bi-pencil-fill mx-auto"></i></a>
 							| <a href="@Url.Action("RemoveUser", "UserManager", new { userId = user.UserId, Area = "Admin" })"><i class="bi bi-trash-fill mx-auto"></i></a>
 						</td>
 					</tr>
 					<tr class="js-edit-@user.UserName.GetHashCode() h-hidden">
 						<td></td>
+						<td>
+							<input type="checkbox" name="isActive" @(user.IsActive ? "checked" : string.Empty) />
+						</td>
 						<td>
 							<input type="text" name="userName" placeholder="username" value="@user.UserName" />
 							<input type="hidden" name="userId" value="@user.UserId" />
@@ -41,13 +47,17 @@
 						<td><input type="text" name="lastName" placeholder="" value="@user.LastName" /></td>
 						<td><input type="text" name="email" placeholder="" value="@user.Email" /></td>
 						<td><input type="text" name="roles" placeholder="" value="@user.RolesText" /></td>
-						<td><button type="submit"
-							formaction="@Url.Action("EditUser", "UserManager", new { position = @Model.IndexOf(user), Area = "Admin" })">Save</button>
+						<td><input type="text" name="newPw" placeholder="Neues Passwort (optional)" /></td>
+						<td>
+							<button type="button" class="js-update">Save</button>
 						</td>
 					</tr>
 				}
 				<tr class="js-add-user h-hidden">
 					<td></td>
+					<td>
+						<input type="checkbox" name="isActiveAdd" />
+					</td>
 					<td>
 						<input type="text" name="userNameAdd" placeholder="username" value="" />
 					</td>
@@ -55,7 +65,8 @@
 					<td><input type="text" name="lastNameAdd" placeholder="" value="" /></td>
 					<td><input type="text" name="emailAdd" placeholder="" value="" /></td>
 					<td><input type="text" name="rolesAdd" placeholder="" value="" /></td>
-					<td><button type="submit"
+					<td colspan="2">
+						<button type="submit"
 							formaction="@Url.Action("AddUser", "UserManager", new { Area = "Admin" })">Add</button>
 					</td>
 				</tr>

@@ -18,7 +18,7 @@ namespace MtcMvcCore.Core.DataProvider
 		/// </summary>
 		/// <param></param>
 		/// <returns>Guid</returns>
-		UserRegisterResult Create(string username, string password, string[] roles);
+		UserRegisterResult Create(string username, string password, string[] roles, bool activate = false);
 
 		[Obsolete("Just for xml handle different")]
 		void SetUsers(List<UserModel> users);
@@ -64,6 +64,13 @@ namespace MtcMvcCore.Core.DataProvider
 		/// <param>UserModel</param>
 		/// <returns>bool</returns>
 		bool UpdateUser(UserModel user);
+		
+		/// <summary>
+		/// Updated one users password by given id
+		/// </summary>
+		/// <param>UserModel</param>
+		/// <returns>bool</returns>
+		bool SetNewPassword(UserModel user, string newPassword);
 
 		/// <summary>
 		/// Updated the name and email

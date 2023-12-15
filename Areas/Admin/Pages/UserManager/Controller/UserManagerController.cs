@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MtcMvcCore.Areas.Admin.Pages.ContentPackages.Controller;
+using MtcMvcCore.Areas.Admin.Pages.UserManager.Models;
 using MtcMvcCore.Core;
 using MtcMvcCore.Core.DataProvider;
 using MtcMvcCore.Core.Models.Authentication;
@@ -39,10 +40,13 @@ namespace MtcMvcCore.Areas.Admin.Pages.UserManager.Controller
 
 		[HttpPost]
 		[Route("api/core/user/update")]
-		public IActionResult EditUser(int position, string[] userId, string[] userName, string[] firstName, string[] lastName, string[] email, string[] roles)
+		public IActionResult EditUser([FromBody] UserViewModel userViewModel)
 		{
-			var user = CreateUserModel(userId[position], userName[position], firstName[position], lastName[position], email[position], roles[position]);
+			var user = CreateUserModel(userViewModel.UserId, userViewModel.UserName, userViewModel.FirstName, userViewModel.LastName, userViewModel.Email, userViewModel.Roles, userViewModel.IsActive);
 			_userDataProvider.UpdateUser(user);
+			if(!string.IsNullOrEmpty(userViewModel.NewPw)) {
+				_userDataProvider.SetNewPassword(user, userViewModel.NewPw);
+			}
 			return Redirect("/admin/usermanager");
 		}
 
@@ -54,10 +58,11 @@ namespace MtcMvcCore.Areas.Admin.Pages.UserManager.Controller
 			return Redirect("/admin/usermanager");
 		}
 
-		private UserModel CreateUserModel(string userId, string userName, string firstName, string lastName, string email, string rolesText)
+		private UserModel CreateUserModel(string userId, string userName, string firstName, string lastName, string email, string rolesText, bool isActive)
 		{
 			return new UserModel
 			{
+				IsActive = isActive,
 				UserId = Guid.Parse(userId),
 				UserName = userName,
 				FirstName = firstName,

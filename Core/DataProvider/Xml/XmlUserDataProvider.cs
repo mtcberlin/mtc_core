@@ -44,7 +44,7 @@ namespace MtcMvcCore.Core.DataProvider.Xml
 		}
 
 
-		public UserRegisterResult Create(string username, string password, string[] roles)
+		public UserRegisterResult Create(string username, string password, string[] roles, bool activate = false)
 		{
 			throw new NotImplementedException();
 		}
@@ -176,6 +176,11 @@ namespace MtcMvcCore.Core.DataProvider.Xml
         }
 
 		public string GetPasswortResetToken(string email)
+		{
+			throw new NotImplementedException();
+		}
+
+		public bool SetNewPassword(UserModel user, string newPassword)
 		{
 			throw new NotImplementedException();
 		}

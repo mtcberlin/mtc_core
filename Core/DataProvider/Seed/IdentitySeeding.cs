@@ -64,7 +64,7 @@ namespace MtcMvcCore.Core.DataProvider.Seed
 
 			if (admin == null)
 			{
-				_userDataProvider.Create("admin", "Admin1234=", new[] { "Administrator", "SuperEditor", "ContentEditor", "User" });
+				_userDataProvider.Create("admin", "Admin1234=", new[] { "Administrator", "SuperEditor", "ContentEditor", "User" }, true);
 			}
 		}
 

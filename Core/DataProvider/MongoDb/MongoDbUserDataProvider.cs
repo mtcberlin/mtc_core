@@ -43,9 +43,9 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 			return true;
 		}
 
-		public UserRegisterResult Create(string username, string password, string[] roles)
+		public UserRegisterResult Create(string username, string password, string[] roles, bool activate = false)
 		{
-			var user = new MongoDbUserModel { UserName = username, Email = username };
+			var user = new MongoDbUserModel { UserName = username, Email = username, EmailConfirmed = activate };
 			var result = _userManager.CreateAsync(user, password).Result;
 			if (result.Succeeded)
 			{
@@ -93,6 +93,7 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 		{
 			var users = _userManager.Users.Select(i => new UserModel
 			{
+				IsActive = i.EmailConfirmed,
 				UserId = i.Id,
 				UserName = i.UserName,
 				FirstName = i.FirstName,
@@ -132,6 +133,7 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 			try
 			{
 				var dbUser = _userManager.FindByIdAsync(user.UserId.ToString()).Result;
+				dbUser.EmailConfirmed = user.IsActive;
 				dbUser.UserName = user.UserName;
 				dbUser.FirstName = user.FirstName;
 				dbUser.LastName = user.LastName;
@@ -307,6 +309,14 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 			var dbUser = _userManager.FindByIdAsync(user.UserId.ToString()).Result;
 			var result = _userManager.ChangePasswordAsync(dbUser, currentpasswort, newPasswort).Result;
 			return result;
+		}
+
+		public bool SetNewPassword(UserModel user, string newPassword)
+		{
+			var dbUser = _userManager.FindByIdAsync(user.UserId.ToString()).Result;
+			var token = _userManager.GeneratePasswordResetTokenAsync(dbUser).Result;
+			var result = _userManager.ResetPasswordAsync(dbUser, token, newPassword).Result;
+			return result.Succeeded;
 		}
 
 		#endregion
