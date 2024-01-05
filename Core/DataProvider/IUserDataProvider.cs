@@ -59,6 +59,13 @@ namespace MtcMvcCore.Core.DataProvider
 		string GetPasswortResetToken(string email);
 
 		/// <summary>
+		/// returns the reset token for the given user
+		/// </summary>
+		/// <param>string email</param>
+		/// <returns>bool</returns>
+		UserRegisterResult ResetPassword(string username, string token, string password);
+
+		/// <summary>
 		/// Updated one user by given id
 		/// </summary>
 		/// <param>UserModel</param>

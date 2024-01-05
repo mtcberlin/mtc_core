@@ -69,6 +69,24 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 			return result;
 		}
 
+		public UserRegisterResult ResetPassword(string username, string token, string password)
+		{
+			var dbUser = _userManager.FindByEmailAsync(username).Result;
+			var result = _userManager.ResetPasswordAsync(dbUser, token, password).Result;
+			if (result.Succeeded)
+			{
+				return new UserRegisterResult
+				{
+					UserId = dbUser.Id
+				};
+			}
+
+			return new UserRegisterResult
+			{
+				ErrorCodes = result.Errors.Select(i => i.Code).ToList()
+			};
+		}
+
 		public UserModel GetCurrentUser()
 		{
 			var user = _userManager.FindByIdAsync(_httpContext.HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value).Result;

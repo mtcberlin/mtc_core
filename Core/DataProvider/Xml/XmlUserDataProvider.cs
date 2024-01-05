@@ -184,5 +184,10 @@ namespace MtcMvcCore.Core.DataProvider.Xml
 		{
 			throw new NotImplementedException();
 		}
+
+		public UserRegisterResult ResetPassword(string username, string token, string password)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
