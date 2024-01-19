@@ -63,7 +63,7 @@ class CoreSelectMedia extends CoreHTMLElement {
   connectedCallbackStart() {
     if (this.getAttribute("data-fieldid") != null) {
       this._fieldid = this.getAttribute("data-fieldid");
-      this._field = document.querySelector('input[id="' + this._fieldid + '"]');
+      this._field = this.querySelector('input[id="' + this._fieldid + '"]');
     }
     //data-selectable-types
     if (this.hasAttribute("data-selectable-types")) {
