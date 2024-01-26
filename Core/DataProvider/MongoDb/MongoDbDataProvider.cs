@@ -247,15 +247,15 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 					{
 						value = Activator.CreateInstance(prop.PropertyType);
 					}
-					//Arrays machen Probleme
+					
 					if(element.IsBsonArray) {
 						SetArrayValues(prop, value, element.AsBsonArray.Values);
 					} else {
 						GetPropertyValue(value, element.AsBsonDocument);
 					}
 					
-					} catch(Exception e) {
-						var x = 1;
+					} catch(Exception) {
+
 					}
 				}
 				else
@@ -300,17 +300,14 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb
 						prop.SetValue(model, docValue.Value.AsInt32);
 						break;
 					case "DateTime":
-						prop.SetValue(model, docValue.Value.AsDateTime);
+						prop.SetValue(model, docValue.Value.ToUniversalTime());
 						break;
 					default:
 						prop.SetValue(model, docValue.Value.AsString);
 						break;
 				}
 			}
-			catch (Exception e)
-			{
-				var x = 1;
-			}
+			catch (Exception) { }
 		}
 
 		private BsonClassMap GetClassNameFromMap(string name)

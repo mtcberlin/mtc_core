@@ -1,4 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
-<routes>
-	<route path="/api/schnuffel" controller="Admin" action="SaveFileContent" area="Admin"></route>
-</routes>

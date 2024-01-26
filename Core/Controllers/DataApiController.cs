@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.Extensions.Logging;
 using MtcMvcCore.Core.Services;
 using System;
-using MtcMvcCore.Core.Models.Media;
-using MtcMvcCore.Core.Models;
 using System.Collections.Generic;
 
 namespace MtcMvcCore.Core.Controllers

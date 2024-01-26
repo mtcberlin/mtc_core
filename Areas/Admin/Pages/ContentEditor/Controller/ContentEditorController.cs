@@ -186,7 +186,7 @@ namespace MtcMvcCore.Areas.Admin.Pages.ContentEditor.Controller
 				CacheManager.Clear();
 				return Json(new { Success = true });
 			}
-			catch (InvalidPageTypeException e)
+			catch (InvalidPageTypeException)
 			{
 				
 			}

@@ -13,9 +13,6 @@ namespace MtcMvcCore.Core.DataProvider.MongoDb.Migrations
 			document.Remove("Copyright");
 		}
 
-		public void Down(BsonDocument document)
-		{
-			var x = 1;
-		}
+		public void Down(BsonDocument document) { }
 	}
 }
