@@ -113,14 +113,12 @@ namespace MtcMvcCore.Core.AppStart
 				services.AddIdentityMongoDbProvider<MongoDbUserModel, MongoDbRole, Guid>(identity =>
 				{
 					identity.Password.RequiredLength = 8;
-					// other options
 				},
 				mongo =>
 				{
 					mongo.ConnectionString = configuration.GetValue<string>("MongoDbOptions:ConnectionString")
 						+ configuration.GetValue<string>("MongoDbOptions:IdentityUserDBName")
 						+ configuration.GetValue<string>("MongoDbOptions:AuthSource", string.Empty);
-					// other options
 				});
 
 				services.AddScoped<IUserDataProvider, MongoDbUserDataProvider>();
@@ -244,8 +242,6 @@ namespace MtcMvcCore.Core.AppStart
 		{
 			endpoints.MapDynamicControllerRoute<RouteValueTransformer>("{**part}");
 		}
-
-
 
 		public static void SetRequestMiddleware(IApplicationBuilder app)
 		{

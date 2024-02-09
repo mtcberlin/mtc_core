@@ -64,8 +64,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 				return new HtmlString(string.Empty);
 			}
 			
-			//return new HtmlString($"<a href=\"{linkUrl}\" {attr} ><core-speak class='speak' aria-hidden='true'></core-speak><span class='js-speak-content'>{linkText}</span></a>");
-			return new HtmlString($"<a href=\"{linkUrl}\" {attr} ><span class='js-speak-content'>{linkText}</span></a>");
+			return new HtmlString($"<a href=\"{linkUrl}\" {attr} ><span class='js-readout-content'>{linkText}</span></a>");
 		}
 
 		public static IHtmlContent RenderLink(this IHtmlHelper htmlHelper, string value, string linkText = null, NameValueCollection parameter = null)
@@ -101,7 +100,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 				linkUrl = value;
 			}
 			//var title = string.IsNullOrEmpty(linkText) ? linkTextPage : linkText;
-			return new HtmlString($"<a href=\"{linkUrl}\" {attr} ><core-speak class='speak' aria-hidden='true'></core-speak><span class='js-speak-content'>{linkText}</span></a>");
+			return new HtmlString($"<a href=\"{linkUrl}\" {attr} ><core-readout aria-hidden='true'></core-readout><span class='js-readout-content'>{linkText}</span></a>");
 
 		}
 

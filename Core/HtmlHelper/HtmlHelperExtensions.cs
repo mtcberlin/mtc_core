@@ -219,11 +219,11 @@ namespace MtcMvcCore.Core.HtmlHelper
 			}
 			if ((!IsEasyLanguage(htmlHelper) && !string.IsNullOrEmpty(field.Value)) || (IsEasyLanguage(htmlHelper) && string.IsNullOrEmpty(field.SimpleText)))
 			{
-				result.Append($"<{tag} {attr} class='js-speak-content' data-text-type='normal'>\n{field.Value}\n</{tag}>");
+				result.Append($"<{tag} {attr} class='js-readout-content' data-text-type='normal'>\n{field.Value}\n</{tag}>");
 			}
 			if (IsEasyLanguage(htmlHelper) && !string.IsNullOrEmpty(field.SimpleText))
 			{
-				result.Append($"<{tag} {attr} class='js-speak-content' data-text-type='simple'>\n{field.SimpleText}\n</{tag}>");
+				result.Append($"<{tag} {attr} class='js-readout-content' data-text-type='simple'>\n{field.SimpleText}\n</{tag}>");
 			}
 			result.Append($"</div>");
 			return new HtmlString(result.ToString());
@@ -260,35 +260,17 @@ namespace MtcMvcCore.Core.HtmlHelper
 			var result = new StringBuilder($"<div {attr} >\n");
 			if ((!IsEasyLanguage(htmlHelper) && !string.IsNullOrEmpty(field.Value)) || (IsEasyLanguage(htmlHelper) && string.IsNullOrEmpty(field.SimpleText)))
 			{
-				result.Append($"<div class='js-speak-content' data-text-type='normal'>{field.Value}</div>");
+				result.Append($"<div class='js-readout-content' data-text-type='normal'>{field.Value}</div>");
 			}
 
 			if (IsEasyLanguage(htmlHelper) && !string.IsNullOrEmpty(field.SimpleText))
 			{
-				result.Append($"<div class='js-speak-content' data-text-type='simple'>{field.SimpleText}</div>");
+				result.Append($"<div class='js-readout-content' data-text-type='simple'>{field.SimpleText}</div>");
 			}
 
 			result.Append($"</div>");
 			return new HtmlString(result.ToString());
 		}
-
-		// /// <summary>
-		// /// Render a Toolbar to ...
-		// /// </summary>
-		// /// <param></param>
-		// /// <returns>IHtmlContent</returns>
-		// public static IHtmlContent Toolbar(this IHtmlHelper htmlHelper, bool speak)
-		// {
-		// 	var result = new StringBuilder();
-		// 	result.Append($"<div class=\"mb-3 p-1\" style=\"background-color: #eaebe8\">");
-
-		// 	if(speak) {
-		// 		result.Append($"<core-speak></core-speak>");
-		// 	}
-
-		//     result.Append("</div>");
-		// 	return new HtmlString(result.ToString());
-		// }
 
 		private static string GetImageDescription(this IHtmlHelper htmlHelper, ImageField imgFld)
 		{
@@ -328,7 +310,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 
 			if (isCaption)
 			{
-				return new HtmlString($"<div class='c_img_caption'><core-speak class='speak' aria-hidden='true'></core-speak>{caption}</div>");
+				return new HtmlString($"<div class='c_img_caption'><core-readout aria-hidden='true'></core-readout>{caption}</div>");
 			}
 
 			return new HtmlString($"");

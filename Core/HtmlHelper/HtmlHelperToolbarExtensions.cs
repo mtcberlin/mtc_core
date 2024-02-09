@@ -25,7 +25,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 			// I un-hid the a11y toolbar. Was there a good reason to hide it?   
 			result.Append($"<accessibility-toolbar aria-hidden=\"false\" class=\"d-flex px-2 align-items-center mb-3\" style=\"background-color: #eaebe8;\">");
 
- 			bool colorEasyLang = htmlHelper.IsEasyLanguage();
+			bool colorEasyLang = htmlHelper.IsEasyLanguage();
 			if (normalLang)
 			{
 				var easyLink = urlService.CreateEasyLink(htmlHelper.ViewContext.HttpContext);
@@ -40,7 +40,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 
 			if (speak)
 			{
-				result.Append($"<core-speak>{GetSpeakIcon()}</core-speak>");
+				result.Append($"<core-readout></core-readout>");
 			}
 
 			if (dgsVideo)
@@ -66,7 +66,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 			// I un-hid the a11y toolbar. Was there a good reason to hide it?   
 			result.Append($"<accessibility-toolbar aria-hidden=\"false\" class=\"d-flex px-2 align-items-center mb-3\" style=\"background-color: #eaebe8;\">");
 
-            bool colorEasyLang = htmlHelper.IsEasyLanguage();
+			bool colorEasyLang = htmlHelper.IsEasyLanguage();
 
 			if (normalLang)
 			{
@@ -82,7 +82,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 
 			if (speak)
 			{
-				result.Append($"<core-speak>{GetSpeakIcon()}</core-speak>");
+				result.Append($"<core-readout></core-readout>");
 			}
 
 			if (dgsVideo)
@@ -130,10 +130,9 @@ namespace MtcMvcCore.Core.HtmlHelper
 		private static string GetNormalLangIcon(string link, bool colorEasyLang)
 		{
 			string svgProp = "svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='26' height='26' viewBox='0 0 36.29 30.244'";
-			string svgTag = colorEasyLang ? $"<{svgProp}>": $"<{svgProp} {_svgActiveFillAttribute}>";
+			string svgTag = colorEasyLang ? $"<{svgProp}>" : $"<{svgProp} {_svgActiveFillAttribute}>";
 
 			var result = new StringBuilder();
-			// result.Append("<button class='btn px-2 outline-pink-focus'>");
 			result.Append($"<a href='{link}' class='btn px-2 outline-pink-focus' aria-label='Alltagssprache'>");
 			result.Append(svgTag);
 			result.Append("<defs>");
@@ -148,7 +147,6 @@ namespace MtcMvcCore.Core.HtmlHelper
 			result.Append("</g>");
 			result.Append("</svg>");
 			result.Append("</a>");
-			// result.Append("</button>");
 
 			return result.ToString();
 		}
@@ -157,7 +155,7 @@ namespace MtcMvcCore.Core.HtmlHelper
 		{
 
 			string svgProp = "svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='26' height='26' viewBox='0 0 34.461 34.561'";
-			string svgTag = colorEasyLang ? $"<{svgProp} {_svgActiveFillAttribute}>": $"<{svgProp}>";
+			string svgTag = colorEasyLang ? $"<{svgProp} {_svgActiveFillAttribute}>" : $"<{svgProp}>";
 			var result = new StringBuilder();
 			// result.Append("<button class='btn px-2'>");
 			result.Append($"<a href='{easyLink}' class='btn px-2 outline-pink-focus' aria-label='Leichtesprache'>");
@@ -187,30 +185,6 @@ namespace MtcMvcCore.Core.HtmlHelper
 
 			return result.ToString();
 		}
-
-    private static string GetSpeakIcon()
-    {
-      var result = new StringBuilder();
-      result.Append("<div class='speak'>");
-      result.Append("<button type='button' class='btn px-2 js-start outline-pink-focus' aria-label='Speak Text'>");
-      result.Append("<svg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 21.555 33.794'>");
-      result.Append("<path data-name='Pfad 101' d='M8.344,0-1.55,7.8H-13.211V26H-1.55l9.894,7.8Z' transform='translate(13.211)'/>");
-      result.Append("</svg>");
-      result.Append("</button>");
-      result.Append("<button type='button' class='btn px-1 js-pause d-none outline-pink-focus' aria-label='Pause speak text'>");
-      result.Append("<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-pause-btn' viewBox='0 0 16 16'>");
-      result.Append("<path d='M6.25 5C5.56 5 5 5.56 5 6.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C7.5 5.56 6.94 5 6.25 5zm3.5 0c-.69 0-1.25.56-1.25 1.25v3.5a1.25 1.25 0 1 0 2.5 0v-3.5C11 5.56 10.44 5 9.75 5z'/><path d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z'/>");
-      result.Append("</svg>");
-      result.Append("</button>");
-      result.Append("<button type='button' class='btn px-1 js-play d-none outline-pink-focus' aria-label='Play speak text'>");
-      result.Append("<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-play-btn' viewBox='0 0 16 16'>");
-      result.Append("<path d='M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z'/><path d='M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z'/>");
-      result.Append("</svg>");
-      result.Append("</button>");
-      result.Append("</div>");
-
-      return result.ToString();
-    }
 
 		private static string GetDgsIcon()
 		{

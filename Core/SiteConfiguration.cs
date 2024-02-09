@@ -112,17 +112,17 @@ namespace MtcMvcCore.Core
 
 		private static void ReadComponentConfigurations()
 		{
-			var componentFolder = Directory.GetDirectories(@"Components/", "*", SearchOption.AllDirectories);
+			var componentFolder = Directory.GetDirectories(@"Components/", "*", SearchOption.TopDirectoryOnly);
 			foreach (var component in componentFolder)
 			{
 				var fullPath = Path.GetFullPath(component).TrimEnd(Path.DirectorySeparatorChar);
-				var componentName  = fullPath.Split(Path.DirectorySeparatorChar).Last();
+				var componentName = fullPath.Split(Path.DirectorySeparatorChar).Last();
 				if (File.Exists(@$"{component}/Config.xml"))
+				{
 					_componentConfigModels.TryAdd(componentName,
 						_xmlDataProvider.GetData<ComponentConfigModel>($"{component}/Config.xml"));
-				else
-					_logger.LogInformation(
-						$"No configuration for Component {componentName} found in {component}/Config.xml");
+					_logger.LogInformation($"Component {componentName} loaded");
+				}
 			}
 
 			if (!Directory.Exists(@$"{Settings.PathsCorePath}/Components/")) return;
@@ -131,13 +131,13 @@ namespace MtcMvcCore.Core
 			foreach (var component in adminComponentFolder)
 			{
 				var fullPath = Path.GetFullPath(component).TrimEnd(Path.DirectorySeparatorChar);
-				var componentName  = fullPath.Split(Path.DirectorySeparatorChar).Last();
+				var componentName = fullPath.Split(Path.DirectorySeparatorChar).Last();
 				if (File.Exists(@$"{component}/Config.xml"))
+				{
 					_componentConfigModels.TryAdd(componentName,
 						_xmlDataProvider.GetData<ComponentConfigModel>($"{component}/Config.xml"));
-				else
-					_logger.LogInformation(
-						$"No configuration for Component {componentName} found in {component}/Config.xml");
+					_logger.LogInformation($"Component {componentName} loaded");
+				}
 			}
 		}
 

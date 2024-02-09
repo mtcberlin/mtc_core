@@ -270,10 +270,10 @@ class CoreVideo {
 		//console.log('coreVideo::appendProgressBar()');
 		let sourceHtml = '<div class="fs-xs px-2 bg-light pt-1 pb-1">';
 		if( copyright ){
-			sourceHtml += `<div class="js-speak-content">© ${copyright}</div>`;
+			sourceHtml += `<div class="js-readout-content">© ${copyright}</div>`;
 		}
 		if ( source ){
-			sourceHtml += `<div class="js-speak-content bg-light fs-xs"><span class="fw-bold">Source:</span> ${source}</div>`;
+			sourceHtml += `<div class="js-readout-content bg-light fs-xs"><span class="fw-bold">Source:</span> ${source}</div>`;
 		}
 		sourceHtml += '<div>';
 
