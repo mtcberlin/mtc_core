@@ -281,7 +281,7 @@ class PageEditor extends BaseEditor {
 	}
 
 	onExportSuccess(data) {
-		debugger;
+		
 	}
 
 	/* ########

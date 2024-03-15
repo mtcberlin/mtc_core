@@ -116,7 +116,6 @@ class CoreRadioField extends CoreFieldBase {
 
     // check if the value changed
     let checkedInput = this.querySelector("input:checked");
-    //debugger;
 
     if (
       checkedInput === undefined ||

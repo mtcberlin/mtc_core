@@ -479,7 +479,7 @@ class CoreVideoPlayer extends CoreHTMLElement {
 	}
 
 	_render(result) {
-		debugger;
+		
 		if (result.success) {
 			let videoMainContainer = this.querySelector(".js-main-video");
 			let videoDgsContainer = this.querySelector(".js-dgs-video");
