@@ -118,43 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="de" xml:space="preserve">
-    <value>Deutsch</value>
+    <value>Tedesco</value>
     <comment/>
   </data>
   <data name="en" xml:space="preserve">
-    <value>Englisch</value>
+    <value>Inglese</value>
     <comment/>
   </data>
   <data name="it" xml:space="preserve">
-    <value>Italienisch</value>
+    <value>Italiano</value>
     <comment/>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>Information</value>
+    <value>Informazioni</value>
     <comment/>
   </data>
   <data name="Common" xml:space="preserve">
-    <value>Allgemein</value>
+    <value>Comune</value>
     <comment/>
   </data>
   <data name="Save" xml:space="preserve">
-    <value>Speichern</value>
+    <value>Salva</value>
     <comment/>
   </data>
   <data name="Delete" xml:space="preserve">
-    <value>Löschen</value>
+    <value>Cancellare</value>
     <comment/>
   </data>
   <data name="Export" xml:space="preserve">
-    <value>Exportieren</value>
+    <value>Esportare</value>
     <comment/>
   </data>
   <data name="AddLanguage" xml:space="preserve">
-    <value>Sprache hinzufügen</value>
+    <value>Aggiungi Lingua</value>
     <comment/>
   </data>
   <data name="Preview" xml:space="preserve">
-    <value>Vorschau</value>
+    <value>Anteprima</value>
     <comment/>
   </data>
   <data name="GroupId" xml:space="preserve">
@@ -162,71 +162,71 @@
     <comment/>
   </data>
   <data name="Language" xml:space="preserve">
-    <value>Sprache</value>
+    <value>Lingua</value>
     <comment/>
   </data>
   <data name="Public visible" xml:space="preserve">
-    <value>Öffentlich sichtbar</value>
+    <value>Pubblicato</value>
     <comment/>
   </data>
   <data name="Page Title" xml:space="preserve">
-    <value>Seitentitel</value>
+    <value>Titolo della Pagina</value>
     <comment/>
   </data>
   <data name="Layout" xml:space="preserve">
-    <value>Darstellung</value>
+    <value>Disposizione</value>
     <comment/>
   </data>
   <data name="CreatedBy" xml:space="preserve">
-    <value>erzeugt von</value>
+    <value>Creato Da</value>
     <comment/>
   </data>
   <data name="UpdatedBy" xml:space="preserve">
-    <value>geändert von</value>
+    <value>Modificato Da</value>
     <comment/>
   </data>
   <data name="Created" xml:space="preserve">
-    <value>erzeugt am</value>
+    <value>Creato Da</value>
     <comment/>
   </data>
   <data name="Updated" xml:space="preserve">
-    <value>geändert am</value>
+    <value>Aggiornato</value>
     <comment/>
   </data>
   <data name="Security" xml:space="preserve">
-    <value>Sicherheit</value>
+    <value>Sicurezza</value>
     <comment/>
   </data>
   <data name="Content Layout Columns" xml:space="preserve">
-    <value>Spaltendarstellung Inhalt</value>
+    <value>Disposizione delle Colonne</value>
     <comment/>
   </data>
   <data name="Page Layout" xml:space="preserve">
-    <value>Seitendarstellung</value>
+    <value>Disposizione della Pagina</value>
     <comment/>
   </data>
   <data name="Display Name" xml:space="preserve">
-    <value>Name (Darstellung)</value>
+    <value>Nome del Display</value>
     <comment/>
   </data>
   <data name="Content" xml:space="preserve">
-    <value>Inhalt</value>
+    <value>Contenuto</value>
     <comment/>
   </data>
   <data name="Placeholder" xml:space="preserve">
-    <value>Platzhalter</value>
+    <value>Segnaposto</value>
     <comment/>
   </data>
   <data name="Unused Components" xml:space="preserve">
-    <value>Nicht zugeordnete Komponenten</value>
+    <value>Componenti non Assegnati</value>
     <comment/>
   </data>
   <data name="Add Component" xml:space="preserve">
-    <value>Komponente hinzufügen</value>
+    <value>Aggiungi Componente</value>
     <comment/>
   </data>
   <data name="Edit Component" xml:space="preserve">
-    <value>Komponente bearbeiten</value>
+    <value>Modifica Componente</value>
     <comment/>
   </data>
   <data name="OK" xml:space="preserve">
@@ -234,319 +234,319 @@
     <comment/>
   </data>
   <data name="Cancel" xml:space="preserve">
-    <value>Abbrechen</value>
+    <value>Cancellare</value>
     <comment/>
   </data>
   <data name="Simple Language" xml:space="preserve">
-    <value>Einfache Sprache</value>
+    <value>Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="Sign language video" xml:space="preserve">
-    <value>Gebärdensprache Video</value>
+    <value>Video sulla Lingua dei Segni</value>
     <comment/>
   </data>
   <data name="Add Link" xml:space="preserve">
-    <value>Link hinzufügen</value>
+    <value>Aggiungi Collegamento</value>
     <comment/>
   </data>
   <data name="Edit Link" xml:space="preserve">
-    <value>Link bearbeiten</value>
+    <value>Modifica Collegamento</value>
     <comment/>
   </data>
   <data name="Delete Link" xml:space="preserve">
-    <value>Link löschen</value>
+    <value>Elimina Collegamento</value>
     <comment/>
   </data>
   <data name="Target" xml:space="preserve">
-    <value>Ziel</value>
+    <value>Obiettivo</value>
     <comment/>
   </data>
   <data name="Size" xml:space="preserve">
-    <value>Größe</value>
+    <value>Dimensione</value>
     <comment/>
   </data>
   <data name="Add Image" xml:space="preserve">
-    <value>Bild hinzufügen</value>
+    <value>Aggiungi Immagine</value>
     <comment/>
   </data>
   <data name="Add Image Text" xml:space="preserve">
-    <value>Bild hinzufügen Text</value>
+    <value>Aggiungi Didascalia all'Immagine</value>
     <comment/>
   </data>
   <data name="Image" xml:space="preserve">
-    <value>Bild</value>
+    <value>Immagine</value>
     <comment/>
   </data>
   <data name="Image Preview" xml:space="preserve">
-    <value>Bildvorschau</value>
+    <value>Anteprima dell'Immagine</value>
     <comment/>
   </data>
   <data name="Caption" xml:space="preserve">
-    <value>Bildunterschrift</value>
+    <value>Didascalia</value>
     <comment/>
   </data>
   <data name="Caption Simple Language" xml:space="preserve">
-    <value>Bildunterschrift einfache Sprache</value>
+    <value>Didascalia Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="Image Description" xml:space="preserve">
-    <value>Bildbeschreibung</value>
+    <value>Descrizione dell'Immagine</value>
     <comment/>
   </data>
   <data name="Image Description Simple Language" xml:space="preserve">
-    <value>Bildbeschreibung einfache Sprache</value>
+    <value>Descrizione dell'Immagine Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="Link Target New Page" xml:space="preserve">
-    <value>Link öffnet neues Fenster</value>
+    <value>Il Collegamento Apre una Nuova Finastra</value>
     <comment/>
   </data>
   <data name="Link Target Same Page" xml:space="preserve">
-    <value>Link öffnet sich im gleichen Fenster</value>
+    <value>Il Collegamento si Apre nella Stessa Finestra</value>
     <comment/>
   </data>
   <data name="Link Url" xml:space="preserve">
-    <value>Link Url</value>
+    <value>URL del Collegamento</value>
     <comment/>
   </data>
   <data name="Icon" xml:space="preserve">
-    <value>Icon</value>
+    <value>Icona</value>
     <comment/>
   </data>
   <data name="Add" xml:space="preserve">
-    <value>Hinzufügen</value>
+    <value>Aggiungere</value>
     <comment/>
   </data>
   <data name="Close Dialog" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Chiudi Finestra di Dialogo</value>
     <comment/>
   </data>
   <data name="Select Image" xml:space="preserve">
-    <value>Bild auswählen</value>
+    <value>Selezionare  l'Immagine</value>
     <comment/>
   </data>
   <data name="Source" xml:space="preserve">
-    <value>Quelle</value>
+    <value>Fonte</value>
     <comment/>
   </data>
   <data name="Select Video" xml:space="preserve">
-    <value>Video auswählen</value>
+    <value>Selezionare il Video</value>
     <comment/>
   </data>
   <data name="Select File" xml:space="preserve">
-    <value>Datei auswählen</value>
+    <value>Selezionare il File</value>
     <comment/>
   </data>
   <data name="Add Video" xml:space="preserve">
-    <value>Video hinzufügen</value>
+    <value>Aggiungi Video</value>
     <comment/>
   </data>
   <data name="Add Video Text" xml:space="preserve">
-    <value>Text</value>
+    <value>Aggiungi Didascalia al Video</value>
     <comment/>
   </data>
   <data name="Delete Video" xml:space="preserve">
-    <value>Video löschen</value>
+    <value>Eliminare il Video</value>
     <comment/>
   </data>
   <data name="SectionTitleProfiles" xml:space="preserve">
-    <value>Profile</value>
+    <value>Profilo</value>
     <comment/>
   </data>
   <data name="SectionSettingsMade" xml:space="preserve">
-    <value>Vorgenomenne Einstellungen</value>
+    <value>Impostazioni Modificate</value>
     <comment/>
   </data>
   <data name="SectionAllSettings" xml:space="preserve">
-    <value>Alle Einstellungen</value>
+    <value>Tutte le Impostazioni</value>
     <comment/>
   </data>
   <data name="DialogTitle" xml:space="preserve">
-    <value>Anpassung der Barrierefreiheit</value>
+    <value>Adattamento all'Accessibilità</value>
     <comment/>
   </data>
   <data name="DialogClose" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Chiudere</value>
     <comment/>
   </data>
   <data name="DialogResetAllSettingsAndProfiles" xml:space="preserve">
-    <value>Alle Einstellungen und Profile zurücksetzen</value>
+    <value>Ripristinare tutte le Impostazioni e il Profilo</value>
     <comment/>
   </data>
   <data name="DialogReset" xml:space="preserve">
-    <value>Zurücksetzen</value>
+    <value>Ripristinare Tutto</value>
     <comment/>
   </data>
   <data name="SectionTitleSettingsMade" xml:space="preserve">
-    <value>Ausgewählte Einstellungen</value>
+    <value>Impostazioni Selezionate</value>
     <comment/>
   </data>
   <data name="SectionTitleAllSettings" xml:space="preserve">
-    <value>Alle Einstellungen</value>
+    <value>Tutte le Impostazioni</value>
     <comment/>
   </data>
   <data name="ProfileEasyLang" xml:space="preserve">
-    <value>Leichte Sprache</value>
+    <value>Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="ProfileEasyLangDescription" xml:space="preserve">
-    <value>Beschreibung Profil leichte Sprache ...</value>
+    <value>Descrizione del Profilo in Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="ProfileLimitedVision" xml:space="preserve">
-    <value>Eingeschränktes Sehen</value>
+    <value>Visione Limitata</value>
     <comment/>
   </data>
   <data name="ProfileLimitedVisionDescription" xml:space="preserve">
-    <value>Beschreibung Profil eingeschränktes Sehen ...</value>
+    <value>Descrizione Profilo Visione Limitata</value>
     <comment/>
   </data>
   <data name="ProfileBlind" xml:space="preserve">
-    <value>Blind</value>
+    <value>Non Vedente</value>
     <comment/>
   </data>
   <data name="ProfileBlindDescription" xml:space="preserve">
-    <value>Beschreibung Profil Bild ...</value>
+    <value>Descrizione Profilo Non Vedente</value>
     <comment/>
   </data>
   <data name="ProfileLimitedHear" xml:space="preserve">
-    <value>Eingeschränktes Hören</value>
+    <value>Percezione Limitata dell'Udito</value>
     <comment/>
   </data>
   <data name="ProfileLimitedHearDescription" xml:space="preserve">
-    <value>Beschreibung Porfil eingeschränktes Hören ...</value>
+    <value>Descrizione  Profilo Udito Limitato</value>
     <comment/>
   </data>
   <data name="ProfileDgs" xml:space="preserve">
-    <value>DGS</value>
+    <value>DGS - Lingua dei Segni</value>
     <comment/>
   </data>
   <data name="ProfileDgsDescription" xml:space="preserve">
-    <value>Beschreibung Profil DGS ...</value>
+    <value>Descrizione profilo DGS - Lingua dei Segni</value>
     <comment/>
   </data>
   <data name="ProfileMotorAssistance" xml:space="preserve">
-    <value>Motorische Hilfe</value>
+    <value>Assistenza Motoria</value>
     <comment/>
   </data>
   <data name="ProfileMotorAssistanceDescription" xml:space="preserve">
-    <value>Beschreibung Profil motorische Hilfe ...</value>
+    <value>Descrizione Profilo Assistenza Motoria</value>
     <comment/>
   </data>
   <data name="ProfileConcentratationDeficit" xml:space="preserve">
-    <value>Konzentrations- und Wahrnehmungsdefizit</value>
+    <value>Deficit di Concentrazione e Percezione</value>
     <comment/>
   </data>
   <data name="ProfileConcentratationDeficitDescription" xml:space="preserve">
-    <value>Beschreibung Profil Konzentrations- und Wahrnehmungsdefizit ...</value>
+    <value>Descrizione del Profilo del Deficit di Concentrazione e Percezione</value>
     <comment/>
   </data>
   <data name="ProfileLowLiterated" xml:space="preserve">
-    <value>Gering Literisiert</value>
+    <value>Bassa Alfabetizzazione</value>
     <comment/>
   </data>
   <data name="ProfileLowLiteratedDescription" xml:space="preserve">
-    <value>Beschreibung Profil Gering Literisiert ...</value>
+    <value>Descrizione Profilo della Bassa Alfabetizzazione</value>
     <comment/>
   </data>
   <data name="SettingReadTextsAloud" xml:space="preserve">
-    <value>Texte vorlesen</value>
+    <value>Lettura di Testi ad Alta Voce</value>
     <comment/>
   </data>
   <data name="SettingEasyLayout" xml:space="preserve">
-    <value>Einfaches Layout</value>
+    <value>Disposizione Semplici</value>
     <comment/>
   </data>
   <data name="SettingFontSize" xml:space="preserve">
-    <value>Schriftgröße</value>
+    <value>Dimensione dei Caratteri</value>
     <comment/>
   </data>
   <data name="SettingLineSpacing" xml:space="preserve">
-    <value>Zeilen Abstand</value>
+    <value>Interlinea</value>
     <comment/>
   </data>
   <data name="SettingCharacterSpacing" xml:space="preserve">
-    <value>Zeichen Abstand</value>
+    <value>Spaziatura dei Caratteri</value>
     <comment/>
   </data>
   <data name="SettingWordSpacing" xml:space="preserve">
-    <value>Wörter Abstand</value>
+    <value>Impostazione dell'Interlinea</value>
     <comment/>
   </data>
   <data name="SettingFontColor" xml:space="preserve">
-    <value>Schriftfarbe</value>
+    <value>Colore del Carattere</value>
     <comment/>
   </data>
   <data name="SettingBackgroundColor" xml:space="preserve">
-    <value>Hintergrundfarbe</value>
+    <value>Colore dello Sfondo</value>
     <comment/>
   </data>
   <data name="SettingDyslexiaFont" xml:space="preserve">
-    <value>Lesbare Schriftart für Legastemie</value>
+    <value>Carattere Leggibile per la Dislessia</value>
     <comment/>
   </data>
   <data name="SettingImageSaturation" xml:space="preserve">
-    <value>Bild Sättigung</value>
+    <value>Saturazione dell'Immagine</value>
     <comment/>
   </data>
   <data name="SettingButtonSize" xml:space="preserve">
-    <value>Button Größe</value>
+    <value>Dimensione dei Pulsanti</value>
     <comment/>
   </data>
   <data name="SettingHighContrast" xml:space="preserve">
-    <value>Hoher Kontrast</value>
+    <value>Alto Contrasto</value>
     <comment/>
   </data>
   <data name="SettingHeadlineBigger" xml:space="preserve">
-    <value>Überschriften vergrößern</value>
+    <value>Ingrandimento dei Titoli</value>
     <comment/>
   </data>
   <data name="SettingHighlightLinks" xml:space="preserve">
-    <value>Links hervorheben</value>
+    <value>Evidenziare i collegamenti</value>
     <comment/>
   </data>
   <data name="SettingHighlightForm" xml:space="preserve">
-    <value>Formularfelder hervorheben</value>
+    <value>Evidenziare i Campi del Modulo</value>
     <comment/>
   </data>
   <data name="SettingHideImage" xml:space="preserve">
-    <value>Bilder ausblenden</value>
+    <value>Nascondere le Immagini</value>
     <comment/>
   </data>
   <data name="SettingEasyLanguage" xml:space="preserve">
-    <value>Leichte Sprache</value>
+    <value>Linguaggio Semplice</value>
     <comment/>
   </data>
   <data name="SettingDgs" xml:space="preserve">
-    <value>Dgs Video anzeigen</value>
+    <value>Mostra Video DGS</value>
     <comment/>
   </data>
   <data name="SettingDialogFeedback" xml:space="preserve">
-    <value>Dialog Ton-Feedback</value>
+    <value>Feedback Audio del Dialogo</value>
     <comment/>
   </data>
   <data name="DialogAriaLabelSetting" xml:space="preserve">
-    <value>Einstellung</value>
+    <value>Impostazioni ARIA</value>
     <comment/>
   </data>
   <data name="DialogAriaLabelProfile" xml:space="preserve">
-    <value>Profil</value>
+    <value>Profilo ARIA</value>
     <comment/>
   </data>
   <data name="DialogSelect" xml:space="preserve">
-    <value>auswählen</value>
+    <value>Selezionare</value>
     <comment/>
   </data>
   <data name="DialoagAriaLabelColorSetting" xml:space="preserve">
-    <value>Farbeinstellung</value>
+    <value>Impostazione del Colore Aria</value>
     <comment/>
   </data>
   <data name="CloseAccessibilityDialog" xml:space="preserve">
-    <value>Accessibility Dialog schließen</value>
+    <value>Chiudere la Finestra di Dialogo sull'Accessibilità</value>
     <comment/>
   </data>
   <data name="SignOut" xml:space="preserve">
-    <value>Abmelden</value>
+    <value>Esci</value>
     <comment/>
   </data>
 </root>

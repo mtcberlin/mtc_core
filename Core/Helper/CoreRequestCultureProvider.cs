@@ -24,6 +24,11 @@ namespace MtcMvcCore.Core.Helper
 					httpContext.Items.Add("lang", splitted[1].Split("_")[0]);
 				}
 			} else if(requestPath.StartsWith("/admin/") || requestPath.StartsWith("/api/" ) ) {
+				if (httpContext.Request.Query.ContainsKey("editorLang") && Settings.AllowedLanguage.Contains(httpContext.Request.Query["editorLang"]))
+				{
+					httpContext.Items.Add("lang", httpContext.Request.Query["editorLang"]);
+					return new ProviderCultureResult(httpContext.Request.Query["editorLang"].ToString());
+				}
 				if (httpContext.Request.Query.ContainsKey("lang") && Settings.AllowedLanguage.Contains(httpContext.Request.Query["lang"]))
 				{
 					httpContext.Items.Add("lang", httpContext.Request.Query["lang"]);

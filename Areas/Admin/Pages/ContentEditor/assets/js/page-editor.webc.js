@@ -181,7 +181,8 @@ class PageEditor extends BaseEditor {
 
 	_getLoadObject(id, type) {
 		const lang = this._getCurrentLanguage();
-		return { "id": id, "type": type, "lang": lang };
+		const editorLang = this._getCurrentEditorLang();
+		return { "id": id, "type": type, "lang": lang, "editorLang": editorLang };
 	}
 
 	_onLoadItemSuccess(id, type, result) {

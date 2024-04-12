@@ -76,7 +76,8 @@ class AssetEditor extends BaseEditor {
 	######## */
 
 	_getLoadObject(itemId) {
-		return { "id": itemId };
+		const editorLang = this._getCurrentEditorLang();
+		return { "id": itemId, "editorLang": editorLang };
 	}
 	
 	onLoadRequest(asset, state) {

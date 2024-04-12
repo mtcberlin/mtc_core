@@ -298,5 +298,9 @@ class BaseEditor extends CoreHTMLElement {
 		this.querySelector(".js-version").classList.toggle("h-hidden", noVersion);
 	}
 
+	_getCurrentEditorLang() {
+		return this.getUrlParameter("lang");
+	}
+
 }
 window.customElements.define('base-editor', BaseEditor);

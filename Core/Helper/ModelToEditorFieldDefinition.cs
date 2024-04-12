@@ -79,7 +79,6 @@ namespace MtcMvcCore.Core.Helper
 						SelectOptions = null,
 						AdditionalFieldInfos = null,
 						ChangeHint = editorAttribute.ChangeHint,
-						//DisplayName = editorAttribute.DisplayName,
 						DisplayName = editorAttribute.DisplayName != null ? Translation.Translate(editorAttribute.DisplayName) : Translation.Translate(prop.Name),
 						HasAdditionalFields = editorAttribute.HasAdditionalFields,
 						FieldConfig = editorAttribute.FieldConfig
