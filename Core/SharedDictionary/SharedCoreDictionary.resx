@@ -390,7 +390,7 @@
     <comment/>
   </data>
   <data name="ProfileEasyLangDescription" xml:space="preserve">
-    <value>Beschreibung Profil leichte Sprache ...</value>
+    <value>Alle Texte werden in leichter Sprache dargestellt. Zusätzlich werden Schrift und Layout angepasst, um die Lesbarkeit zu erhöhen.</value>
     <comment/>
   </data>
   <data name="ProfileLimitedVision" xml:space="preserve">
@@ -398,7 +398,7 @@
     <comment/>
   </data>
   <data name="ProfileLimitedVisionDescription" xml:space="preserve">
-    <value>Beschreibung Profil eingeschränktes Sehen ...</value>
+    <value>Schriftgröße und Layout werden optimiert. Links werden deutlich hervorgehoben, um die Navigation zu erleichtern.</value>
     <comment/>
   </data>
   <data name="ProfileBlind" xml:space="preserve">
@@ -406,7 +406,7 @@
     <comment/>
   </data>
   <data name="ProfileBlindDescription" xml:space="preserve">
-    <value>Beschreibung Profil Bild ...</value>
+    <value>Ein vereinfachtes Layout erleichtert die Nutzung von Screenreadern. Bildbeschreibungen sind stets eingeblendet, um visuelle Inhalte zu vermitteln.</value>
     <comment/>
   </data>
   <data name="ProfileLimitedHear" xml:space="preserve">
@@ -414,7 +414,7 @@
     <comment/>
   </data>
   <data name="ProfileLimitedHearDescription" xml:space="preserve">
-    <value>Beschreibung Porfil eingeschränktes Hören ...</value>
+    <value>Aktuell sind hierfür noch keine Einstellungen vorhanden. Es wird jedoch daran gearbeitet, dieses Profil zu erweitern.</value>
     <comment/>
   </data>
   <data name="ProfileDgs" xml:space="preserve">
@@ -422,7 +422,7 @@
     <comment/>
   </data>
   <data name="ProfileDgsDescription" xml:space="preserve">
-    <value>Beschreibung Profil DGS ...</value>
+    <value>Videos in deutscher Gebärdensprache (DGS) werden automatisch angezeigt, um gehörlosen oder schwerhörigen Nutzern den Zugang zu erleichtern.</value>
     <comment/>
   </data>
   <data name="ProfileMotorAssistance" xml:space="preserve">
@@ -430,7 +430,7 @@
     <comment/>
   </data>
   <data name="ProfileMotorAssistanceDescription" xml:space="preserve">
-    <value>Beschreibung Profil motorische Hilfe ...</value>
+    <value>Links werden hervorgehoben, um die Navigation mit alternativen Eingabegeräten zu erleichtern.</value>
     <comment/>
   </data>
   <data name="ProfileConcentratationDeficit" xml:space="preserve">
@@ -438,7 +438,7 @@
     <comment/>
   </data>
   <data name="ProfileConcentratationDeficitDescription" xml:space="preserve">
-    <value>Beschreibung Profil Konzentrations- und Wahrnehmungsdefizit ...</value>
+    <value>Erhöhter Zeilenabstand und ein vereinfachtes Layout helfen dabei, den Fokus zu behalten.</value>
     <comment/>
   </data>
   <data name="ProfileLowLiterated" xml:space="preserve">
@@ -446,7 +446,7 @@
     <comment/>
   </data>
   <data name="ProfileLowLiteratedDescription" xml:space="preserve">
-    <value>Beschreibung Profil Gering Literisiert ...</value>
+    <value>Anpassungen bei Schriftgröße sowie Zeilen- und Wortabstand verbessern die Lesbarkeit für Nutzer mit geringer Leseerfahrung.</value>
     <comment/>
   </data>
   <data name="SettingReadTextsAloud" xml:space="preserve">
